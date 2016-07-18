@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<tc_include file="Public:head"/>
+</head>
+<body>
+	<tc_include file="Public:scripts" />
+	<tc_include file="Public:nav"/>
+
+	<h1>产品展示</h1>
+
+
+    <php>
+
+		$product=M('product');
+		$list=$product->select();
+    
+    </php>
+
+    <volist name=":test()" id="vo" empty="no data">
+    	
+    	{$vo.product_name} <br>
+    </volist>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<tc_include file="Public:footer"/>
+
+</body>
+</html>
