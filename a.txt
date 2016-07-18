@@ -1,2 +1,7 @@
 abs
+<<<<<<< HEAD
 changed in hechao branch...
+=======
+in xuweikang branch chgeded!!
+
+>>>>>>> xuweikang
