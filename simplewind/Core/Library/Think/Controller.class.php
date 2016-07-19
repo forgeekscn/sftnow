@@ -302,6 +302,6 @@ abstract class Controller {
         // 执行后续操作
         Hook::listen('action_end');
     }
-}
+}///UploadFiles/Images//admin/201304/01.jpg.axd
 // 设置控制器别名 便于升级
 class_alias('Think\Controller','Think\Action');

@@ -1,8 +1,0 @@
-[ 2016-07-19T14:28:23+08:00 ] 127.0.0.1 /thinkcmfx/index.php?g=News&m=AdminIndex&a=newsFromCompany&menuid=163
-NOTIC: D方法实例化没找到模型类News\Model\PluginArticleCategoryModel
-NOTIC: D方法实例化没找到模型类News\Model\PluginArticleItemModel
-
-[ 2016-07-19T14:28:24+08:00 ] 127.0.0.1 /thinkcmfx/index.php?g=News&m=AdminIndex&a=newsFromCompany&menuid=163
-NOTIC: D方法实例化没找到模型类News\Model\PluginArticleCategoryModel
-NOTIC: D方法实例化没找到模型类News\Model\PluginArticleItemModel
-

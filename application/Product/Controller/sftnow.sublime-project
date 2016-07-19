@@ -4,7 +4,8 @@
 		{
 			"path": "F:\\hechao\\wampp\\wamp\\www\\ThinkCMFX"
 		}
-	],  
+	]
+	,  
     "settings":  
     {  
         "xdebug": {  
@@ -13,7 +14,7 @@
             "url": "http://localhost:8089/thinkcmfx/admin", 
             "super_globals": true,  
             "close_on_stop": true,  
-            "port": 9001  
+            "port": 9999 
         }  
     }  
 }

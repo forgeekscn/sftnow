@@ -47,7 +47,7 @@ class AdminIndexController extends AdminbaseController{
 	function productE(){
 		$productE=$this->productModel->where("CategoryId=3")->select();
 		$this->assign("productE",$productE);
-                
+                	
 		// print_r($productE);
 		$this->display(":productEL");
 	}
