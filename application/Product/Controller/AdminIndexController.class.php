@@ -12,7 +12,7 @@ class AdminIndexController extends AdminbaseController{
 		
 	}
 
-	// function edit($id=''){
+	// function edit($id){
 
 	// 	if($id==''){
 	// 		$this->display("error");
@@ -26,7 +26,7 @@ class AdminIndexController extends AdminbaseController{
 	// }
 
 
-	// function delete($id=''){
+	// function delete($id){
 	
 	// 	if($id==''){
 	// 		$this->display("error");
@@ -43,14 +43,23 @@ class AdminIndexController extends AdminbaseController{
 
 	// }
 
+	function productE(){
+		$productE=$this->productModel->where("CategoryId=3")->select();
+		$this->assign("productE",$productE);
+		// print_r($productE);
+		$this->display(":productEL");
+	}
+
+	
 	function add(){
 		$this->display(":add");
 	}
 
-	function ProductE(){
+	function ProductEl(){
+
 		$productE=$this->productModel->where("CategoryId=3")->select();
 
-		$this->assign("productE",$productE);
+		// $this->assign("productE",$productE);
 		$this->display(":productE");
 	}
 
@@ -59,49 +68,11 @@ class AdminIndexController extends AdminbaseController{
 
 
 
-//asdasdas
+//asdasda
 
 
 
-//bsdasdsdasds
-	function unicode_decode($name)  
-	{  
-	    // 转换编码，将Unicode编码转换成可以浏览的utf-8
-		$pattern = '/([\w]+)|(\\\u([\w]{4}))/i';  
-		preg_match_all($pattern, $name, $matches);  
-		if (!empty($matches))  
-		{  
-			$name = '';  
-			for ($j = 0; $j < count($matches[0]); $j++)  
-			{  
-				$str = $matches[0][$j];  
-				if (strpos($str, '\\u') === 0)  
-				{  
-					$code = base_convert(substr($str, 2, 2), 16, 10);  
-					$code2 = base_convert(substr($str, 4), 16, 10);  
-					$c = chr($code).chr($code2);  
-					$c = iconv('UCS-2', 'UTF-8', $c);  
-					$name .= $c;  
-				}  
-				else  
-				{  
-					$name .= $str;  
-				}  
-			}  
-		}  
-		return $name;  
-	}  
-
-	function unicode_to_utf8($unicode_str) {
-		$utf8_str = '';
-		$code = intval(hexdec($unicode_str));
-	    //这里注意转换出来的code一定得是整形，这样才会正确的按位操作
-		$ord_1 = decbin(0xe0 | ($code >> 12));
-		$ord_2 = decbin(0x80 | (($code >> 6) & 0x3f));
-		$ord_3 = decbin(0x80 | ($code & 0x3f));
-		$utf8_str = chr(bindec($ord_1)) . chr(bindec($ord_2)) . chr(bindec($ord_3));
-		return $utf8_str;
-	}
+	
 
 	function getProductEJson(){
 		$productE=$this->productModel->where("CategoryId=3")->select();
@@ -125,10 +96,10 @@ class AdminIndexController extends AdminbaseController{
 		}
 
 
-		
+
 		print_r(json_encode($json, JSON_UNESCAPED_UNICODE) ) ;
-		
-		
+
+
 		// for ($i= 0;$i< count($productE); $i++){
 		// 	for($j= 0;$j< count($productE[$i]); $j++){
 
@@ -171,12 +142,11 @@ class AdminIndexController extends AdminbaseController{
 		$this->assign("productC",$productC);
 		$this->display(":productC");
 	}
-	
+
 	function ProductOther(){
 		$ProductOther=$this->productModel->where("1=1")->select();
 		$this->assign("productOther",$ProductOther);
 		$this->display(":productOther");
 	}
-
 
 }
