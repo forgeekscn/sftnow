@@ -1,4 +1,49 @@
-<admintpl file="header" />
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+	<link href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/thinkcmfx/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/thinkcmfx/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <style>
+		.length_3{width: 180px;}
+		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+		.table-list{margin-bottom: 0px;}
+	</style>
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<![endif]-->
+<script type="text/javascript">
+//全局变量
+var GV = {
+    DIMAUB: "/thinkcmfx/",
+    JS_ROOT: "public/js/",
+    TOKEN: ""
+};
+</script>
+<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/thinkcmfx/public/js/jquery.js"></script>
+    <script src="/thinkcmfx/public/js/wind.js"></script>
+    <script src="/thinkcmfx/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+<?php if(APP_DEBUG): ?><style>
+		#think_page_trace_open{
+			z-index:9999;
+		}
+	</style><?php endif; ?>
 <style type="text/css">
 .pic-list li {
     margin-bottom: 5px;
@@ -9,19 +54,19 @@
 <body>
     <div class="wrap js-check-wrap">
         <ul class="nav nav-tabs">
-            <li><a href="{:U('AdminIndex/productE')}">电表管理</a></li>
+            <li><a href="<?php echo U('AdminIndex/productE');?>">电表管理</a></li>
 
 
-            <li class="active"><a href="{:U('AdminIndex/add')}" target="_self">添加电表</a></li>
+            <li class="active"><a href="<?php echo U('AdminIndex/add');?>" target="_self">添加电表</a></li>
         </ul>
-        <form action="{:U('AdminPost/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+        <form action="<?php echo U('AdminPost/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
             <div class="row-fluid">
                 <div class="span9">
                     <table class="table table-bordered">
                         <tr>
                             <th width="80"></th>
                             <td>
-                                <select multiple="multiple" style="max-height: 100px;" name="term[]">{$taxonomys}</select>
+                                <select multiple="multiple" style="max-height: 100px;" name="term[]"><?php echo ($taxonomys); ?></select>
                                 <div>windows：按住 Ctrl 按钮来选择多个选项,Mac：按住 command 按钮来选择多个选项</div>
                             </td>
                         </tr>
@@ -77,9 +122,9 @@
                                 <div style="text-align: center;">
                                     <input type="hidden" name="smeta[thumb]" id="thumb" value="">
                                     <a href="javascript:void(0);" onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
-                                        <img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
+                                        <img src="/thinkcmfx/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id="thumb_preview" width="135" style="cursor: hand" />
                                     </a>
-                                    <input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+                                    <input type="button" class="btn btn-small" onclick="$('#thumb_preview').attr('src','/thinkcmfx/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
                                 </div>
                             </td>
                         </tr>
@@ -88,7 +133,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" name="post[post_modified]" value="{:date('Y-m-d H:i:s',time())}" class="js-datetime" style="width: 160px;">
+                                <input type="text" name="post[post_modified]" value="<?php echo date('Y-m-d H:i:s',time());?>" class="js-datetime" style="width: 160px;">
                             </td>
                         </tr>
                         <tr>
@@ -123,18 +168,18 @@
             </div>
             <div class="form-actions">
                 <button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
-                <a class="btn" href="{:U('AdminPost/index')}">返回</a>
+                <a class="btn" href="<?php echo U('AdminPost/index');?>">返回</a>
             </div>
         </form>
     </div>
-    <script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+    <script type="text/javascript" src="/thinkcmfx/public/js/common.js"></script>
+    <script type="text/javascript" src="/thinkcmfx/public/js/content_addtop.js"></script>
     <script type="text/javascript">
     //编辑器路径定义
     var editorURL = GV.DIMAUB;
     </script>
-    <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="/thinkcmfx/public/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="/thinkcmfx/public/js/ueditor/ueditor.all.min.js"></script>
     <script type="text/javascript">
     $(function() {
         $(".js-ajax-close-btn").on('click', function(e) {
@@ -270,7 +315,7 @@
                                         }, {
                                             name: '返回列表页',
                                             callback: function() {
-                                                location = "{:U('AdminPost/index')}";
+                                                location = "<?php echo U('AdminPost/index');?>";
                                                 return true;
                                             }
                                         }]

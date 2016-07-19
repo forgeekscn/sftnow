@@ -51,6 +51,10 @@ var GV = {
 
 	table tr {}
 
+	#nav {
+		margin-top: 20px;
+	}
+
 	table td {
 		border: 1px solid #999;
 	}
@@ -60,7 +64,7 @@ var GV = {
 </head>
 
 <body>
-	<ul class="nav nav-tabs">
+	<ul class="nav nav-tabs" id="nav">
 		<li class="active"><a href="javascript:;">电表管理</a></li>
 		<li><a href="<?php echo U('AdminIndex/add');?>" target="_self">添加电表</a></li>
 	</ul>
@@ -111,7 +115,7 @@ var GV = {
 						<td> <?php echo ($vo["title"]); ?> </td>
 						<td> <?php echo ($vo["content"]); ?> </td>
 						<td> <?php echo ($vo["extendcontent02"]); ?> </td>
-						<td> <a href=" ">编辑</a> |     
+						<td> <a href="<?php echo U('AdminIndex/editE');?>">编辑</a> |
 							<a href=" ">删除</a></td>
 							<!-- :U('AdminIndex/edit','id'=>$vo['id'])) -->
 						</tr><?php endforeach; endif; ?>

@@ -8,9 +8,7 @@
 <body>
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
-			<li><a href="{:U('AdminPost/index')}">{:L('PORTAL_ADMINPOST_INDEX')}</a></li>
-			<li><a href="{:U('AdminPost/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">{:L('PORTAL_ADMINPOST_ADD')}</a></li>
-			<li c lass="active"><a href="#">{:L('PORTAL_ADMINPOST_EDIT')}</a></li>
+			<li><a href="javascrip:;">修改电表</a></li>
 		</ul>
 		<form action="{:U('AdminPost/edit_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 			<div class="row-fluid">

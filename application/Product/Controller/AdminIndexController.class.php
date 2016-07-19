@@ -12,17 +12,18 @@ class AdminIndexController extends AdminbaseController{
 		
 	}
 
-	// function edit($id){
+	function editE(){
+		 
+		$this->display(":edit");
+		// if($id==''){
+		// 	$this->display("error");
+		// }
+		// else {
+		// 	$this->assign("id",$id);
+		// 	$this->display(":edit");
 
-	// 	if($id==''){
-	// 		$this->display("error");
-	// 	}
-	// 	else {
-	// 		$this->assign("id",$id);
-	// 		$this->display(":edit");
-
-	// 	}
-
+		// }
+	}
 	// }
 
 
