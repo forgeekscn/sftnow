@@ -115,6 +115,5 @@ return array (
   'ADMIN_USER_ADD' => 'Add Admin',
   'ADMIN_USER_DELETE' => '删除管理员',
   'ADMIN_USER_EDIT' => '管理员编辑',
-  'ADMIN_MENU_SPMY_IMPORT_MENU' =>"导入菜单"
-  
+  'ADMIN_MENU_SPMY_IMPORT_MENU' => '导入菜单',
 );

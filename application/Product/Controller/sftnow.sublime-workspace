@@ -1,0 +1,1416 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"uni",
+				"unicode_decode"
+			],
+			[
+				"pro",
+				"ProductE"
+			],
+			[
+				"productSolution",
+				"ProductSolution"
+			],
+			[
+				"productG",
+				"ProductG"
+			],
+			[
+				"newsFrom",
+				"newsFromWorld"
+			],
+			[
+				"new",
+				"newsitem"
+			],
+			[
+				"news",
+				"newsItemResult"
+			],
+			[
+				"newsite",
+				"newsitem"
+			],
+			[
+				"ass",
+				"assign"
+			],
+			[
+				"Co",
+				"CommonModel"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"h",
+				"html	html"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"word",
+				"wordpress"
+			],
+			[
+				"p",
+				"php	<?php … ?>"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "AdminIndexController.class.php",
+			"settings":
+			{
+				"buffer_size": 3103,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productEL.html",
+			"settings":
+			{
+				"buffer_size": 5517,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Main/index.html",
+			"settings":
+			{
+				"buffer_size": 2612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/edit.html",
+			"settings":
+			{
+				"buffer_size": 10167,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> F:\\hechao\\wampp\\wamp\\www\\ThinkCMFX\\application\\Product\\Controller\\AdminIndexController.class.php\n	|+| 49\n",
+			"settings":
+			{
+				"buffer_size": 108,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 288.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"font-size"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/hechao/wampp/wamp/www/ThinkCMFX",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Main"
+	],
+	"file_history":
+	[
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/edit.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/edit.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/add.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productE.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/a.txt",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/add.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/delete.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/error.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productW.html",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller/AdminIndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/add.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/edit.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Public/assets/js/index.js",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Controller/AdminIndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productC.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productG.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productSolution.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productOther.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Model/PluginProductItemModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/AdminIndex/newsFromWorld.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Model/PluginArticleCategoryModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Model/PluginArticleItemModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Model/ProductModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Model/PluginProductItemModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/AdminIndex/newsFromCompany.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/AdminIndex/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/ListController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/AdminPostController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/AdminPageController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Model/TermRelationshipsModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Model/PostsModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Model/TermsModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Model/PluginArticleCategory.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Product/product.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/data/conf/db.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/User/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/User/Controller/IndexadminController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Controller/HomebaseController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Controller/AppframeController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Model/RoleModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Model/UsersModel.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Portal/list.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Portal/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/News/summary.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Summary/culture.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Summary/summary.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/News/news.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/News/trends.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Contact/getContact.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Product/solution.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Public/scripts.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Public/head.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Contact/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Summary/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Public/footer.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Contact/getCulture.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Public/css/style.css",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/themes/simplebootx/Contact/Index/getContact.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Controller/MemberbaseController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Blog/controller/AdminPassageController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Api/Controller/GuestbookController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Demo/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Blog/controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Blog/controller/AdminIndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Controller/IndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Common/Conf/config.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Admin/Controller/RouteController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/Document.url",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/index.php",
+		"/F/hechao/wampp/wamp/www/wordpress/wp-config.php",
+		"/F/hechao/wampp/wamp/www/wordpress/wp-config-sample.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"F:\\hechao\\wampp\\wamp\\www\\ThinkCMFX"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sftnow",
+			"list",
+			"jquery",
+			" $",
+			"\n    	",
+			"fields",
+			"		$",
+			"nav",
+			"分享",
+			"script",
+			"			 \n",
+			"public",
+			"\n ",
+			"php"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "AdminIndexController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1095,
+								1095
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1170,
+										1171
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1026,
+										1027
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productEL.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5517,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										1130,
+										1134
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								4088,
+								4088
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4092,
+										4093
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4061,
+										4062
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1201.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Main/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										507,
+										510
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										263,
+										266
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/edit.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10167,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										2781,
+										2784
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										202,
+										203
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										190,
+										191
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 972.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 193.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sftnow.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"15":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 3
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
