@@ -118,3 +118,6 @@ NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
 [ 2016-07-20T19:23:29+08:00 ] ::1 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE&menuid=167
 NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
 
+[ 2016-07-20T20:46:35+08:00 ] ::1 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE&menuid=167
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
