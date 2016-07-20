@@ -183,7 +183,7 @@ class AdminPostController extends AdminbaseController {
 		->where($where)
 		->count();
 			
-		$page = $this->page($count, 20);
+		$page = $this->page($count, 5);
 			
 			
 		$posts=$this->term_relationships_model
