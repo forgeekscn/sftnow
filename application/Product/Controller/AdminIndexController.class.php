@@ -14,16 +14,24 @@ class AdminIndexController extends AdminbaseController{
 
 	function edit(){
 
-		$id=$_GET['id'];
-		// $categoryId=$_GET['categoryId'];
+		$id="".$_GET['id'];
+		$categoryId="".$_GET['categoryId'];
 
 		// $data["Id"]=$id;
 		// $data["CategoryId"]=$categoryId;
 		$product=$this->productModel->where("Id=$id")->find();
 		$this->assign("product",$product);
+		if($categoryId=='3'){
+			$this->display(":edit");
+		}else if($categoryId=='4'){
+			$this->display(":editW");
+		}else if($categoryId=='5'){
+			$this->display(":editG");
+		}else {
 
-		$this->display(":editW");
-	 
+		}
+
+
 	}
 	 
 	 function edit_post(){
@@ -68,8 +76,8 @@ class AdminIndexController extends AdminbaseController{
 	 		$this->redirect("AdminIndex/productE");
 		}else if($_POST["categoryid"]=='4'){
 	 		$this->redirect("AdminIndex/productW");
-		}else {
- 			$this->redirect("AdminIndex/product");
+		}else if($_POST["categoryid"]=='5'){
+ 			$this->redirect("AdminIndex/productG");
 		}
 
 	 }
@@ -99,7 +107,16 @@ class AdminIndexController extends AdminbaseController{
 			$query=$this->productModel->where("Id=$id")->select();
 			if(count($query)>0){
 				$this->productModel->where("Id=$id")->delete();
-				$this->redirect("AdminIndex/ProductE");
+
+				if($_GET['categoryId']=='4'){
+					$this->redirect("AdminIndex/ProductW");
+				}else if ($_GET['categoryId']=='3') {
+					$this->redirect("AdminIndex/ProductE");
+				}else if($_GET['categoryId']=='5'){
+					$this->redirect("AdminIndex/ProductG");
+				}
+
+				
 			}
 		}
 	}
@@ -108,54 +125,38 @@ class AdminIndexController extends AdminbaseController{
 		$this->display(":addW");
 
 	}
+
+
 	public function productW(){
-		$term=$_POST['term'];
-		$keyword=$_POST['keyword'];
-
-
-		$data['CategoryId']='4';
-		if($term!=0 && $term!=null){
-			$data['Title']=$term;
-
-		}
-		if($keyword!=null){
-			$data['Content']=array('like', "%".$keyword."%");
-
-		} 
-		$productE=$this->productModel->where($data)->order('Id')->page($_GET['p'],5)->select();
-
-		$count      =$this->productModel->where($data)->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
-		$Page->setConfig('header','共 %TOTAL_ROW% 条记录');
-		$Page->setConfig('first','首页');
-		$Page->setConfig('last','尾页');
-
-		$show       = $Page->show();// 分页显示输出
-		$this->assign('page',$show);// 赋值分页输出
-
-		$Titles=$this->productModel->distinct(true)->field('Title')->select();
-		$this->assign("productE",$productE);
-		$this->assign("Titles",$Titles);
-
-		// print_r($productE); 
+		$this->getProductData('4');
 		$this->display(":productW");
 	
 	}
 	public function productE(){
  
+		$this->getProductData('3');
+		$this->display(":productEL");
+	}
+
+
+	function ProductG(){
+		$this->getProductData('5');
+		$this->display(":productG");
+	}
+
+	public function getProductData($categoryId){
 
 		$term=$_POST['term'];
 		$keyword=$_POST['keyword'];
 
 
-		$data['CategoryId']='3';
+		$data['CategoryId']=$categoryId;
 		if($term!=0 && $term!=null){
 			$data['Title']=$term;
 
 		}
 		if($keyword!=null){
 			$data['Content']=array('like', "%".$keyword."%");
-
 		} 
 		$productE=$this->productModel->where($data)->order('Id')->page($_GET['p'],5)->select();
 
@@ -171,16 +172,21 @@ class AdminIndexController extends AdminbaseController{
 		$Titles=$this->productModel->distinct(true)->field('Title')->select();
 		$this->assign("productE",$productE);
 		$this->assign("Titles",$Titles);
-
-		// print_r($productE);
-		$this->display(":productEL");
 	}
 
 
 	function add(){
+		$categoryid=$_GET['categoryId'];
+		if($categoryid=='3'){
+			$this->display(":add");
+		}else if($categoryid=='4'){
+			$this->display(":addW");
+		}else if($categoryid=='5'){
+			$this->display(":addG");
+		}
 		
 
-		$this->display(":add");
+		
 
 
 
@@ -225,14 +231,35 @@ class AdminIndexController extends AdminbaseController{
 		 
 
 	}
-	function add_post(){
+	public function add_post(){
 
+		$categoryid="".$_POST['categoryId'];
+		$this->datapost($categoryid);
+  		
+  		if($categoryid=='3'){
+  			$this->redirect("AdminIndex/ProductE");
+  		}else if($categoryid=='4'){
+  			$this->redirect("AdminIndex/ProductW");
+  		}else if($categoryid=='5'){
+  			$this->redirect("AdminIndex/ProductG");
+  		}else {
+  			// $this->redirect("AdminIndex/ProductE");
+  		}
+		
+
+ 
+	}
+ 
+ 
+
+	public function datapost($categoryId){
+		$data["CategoryId"]=$categoryId;
 		$data["Title"]=$_POST["Title"];
 		$data["ExtendContent01"]=$_POST["ExtendContent01"];
 		$data["Content"]=$_POST["Content"];
 		$data["ExtendContent03"]=$_POST["ExtendContent03"];
 		$data["ExtendContent02"]=$_POST["ExtendContent02"];
-		$data["CategoryId"]='3';
+		
 		
 		$config = array(
 			'maxSize'    =>    3145728,
@@ -260,22 +287,7 @@ class AdminIndexController extends AdminbaseController{
 	    $data["Id"]=$id;
 		$productE=$this->productModel->add($data);
 		
-  
-		$this->redirect("AdminIndex/ProductE");
-
- 
 	}
-
-	function ProductEl(){
-
-		$productE=$this->productModel->where("CategoryId=3")->select();
-
-		// $this->assign("productE",$productE);
-		$this->display(":productE");
-	}
-
- 
-
 
 
 
@@ -308,11 +320,6 @@ class AdminIndexController extends AdminbaseController{
 
  
 
-	function ProductG(){
-		$productG=$this->productModel->where("CategoryId=5")->select();
-		$this->assign("productG",$productG);
-		$this->display(":productG");
-	}
 
 
 

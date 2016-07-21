@@ -12,7 +12,8 @@
             <li><a href="{:U('AdminIndex/productW')}">水表管理</a></li>
             <li class="active"><a href="{:U('AdminIndex/addW')}" target="_self">添加水表</a></li>
         </ul>
-        <form action="{:U('AdminIndex/addW_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+        <form action="{:U('AdminIndex/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+         <input type="hidden" name="categoryId" value="4">
             <div class="row-fluid">
                 <div class="span9">
                     <table class="table table-bordered">
