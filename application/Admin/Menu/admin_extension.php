@@ -108,7 +108,7 @@ return array (
       'action' => 'index',
       'data' => '',
       'type' => '1',
-      'status' => '1',
+      'status' => '0',
       'name' => '插件管理',
       'icon' => '',
       'remark' => '',

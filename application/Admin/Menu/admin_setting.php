@@ -9,7 +9,7 @@ return array (
   'name' => '设置',
   'icon' => 'cogs',
   'remark' => '',
-  'listorder' => '0',
+  'listorder' => '42',
   'children' => 
   array (
     array (

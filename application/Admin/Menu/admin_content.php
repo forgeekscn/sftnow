@@ -6,10 +6,10 @@ return array (
   'data' => '',
   'type' => '0',
   'status' => '1',
-  'name' => '内容管理',
+  'name' => '文章管理',
   'icon' => 'th',
   'remark' => '',
-  'listorder' => '30',
+  'listorder' => '2',
   'children' => 
   array (
     array (

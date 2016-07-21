@@ -457,3 +457,35 @@ SQL: UPDATE `cmf_menu` SET `listorder`='0' WHERE `id` = 84 [ RunTime:0.0002s ]
 [ 2016-07-21T17:02:28+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
 NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
 
+[ 2016-07-21T18:23:27+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-21T18:23:39+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=menu&a=spmy_export_menu
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-21T18:23:41+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-21T18:24:52+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-21T18:39:08+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Main&a=index
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/productEL.html
+
+[ 2016-07-21T18:41:47+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Main&a=index
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/AdminIndex/productEL.html
+
+[ 2016-07-21T18:41:59+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Main&a=index
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Product/AdminIndex/productEL.html
+
+[ 2016-07-21T18:42:57+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Main&a=index
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/productEL.html
+
+[ 2016-07-21T18:44:54+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Main&a=index
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/productEL.html
+

@@ -44,34 +44,26 @@ var GV = {
 			z-index:9999;
 		}
 	</style><?php endif; ?>
-<style>
-.home_info li em {
-    float: left;
-    width: 120px;
-    font-style: normal;
-}
-
-li {
-    list-style: none;
-}
-</style>
-<script src="/thinkcmfx/public/js/common.js"></script>
-<script src="/thinkcmfx/public/js/jquery.js"></script>
 </head>
-
 <body>
-    <?php  ?>
-
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$("p").hide();
-	});
+	<div class="wrap">
+		<div id="error_tips">
+			<h2>菜单备份成功！</h2>
+			<div class="error_cont">
+				<ul>
+					<li>菜单备份成功！</li>
+				</ul>
+				<div class="error_return">
+					<a href="<?php echo U('menu/index');?>" class="btn">关闭</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/thinkcmfx/public/js/common.js"></script>
+	<script>
+		var close_timeout = setTimeout(function() {
+			location.href = "<?php echo U('menu/index');?>";
+		}, 2000);
 	</script>
-
-    <h2>This is a heading</h2>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <button type="button">Click me</button>
 </body>
-
 </html>

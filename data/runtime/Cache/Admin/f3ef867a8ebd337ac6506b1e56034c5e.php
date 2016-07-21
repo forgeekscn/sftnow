@@ -44,34 +44,37 @@ var GV = {
 			z-index:9999;
 		}
 	</style><?php endif; ?>
-<style>
-.home_info li em {
-    float: left;
-    width: 120px;
-    font-style: normal;
-}
-
-li {
-    list-style: none;
-}
-</style>
-<script src="/thinkcmfx/public/js/common.js"></script>
-<script src="/thinkcmfx/public/js/jquery.js"></script>
 </head>
-
 <body>
-    <?php  ?>
-
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$("p").hide();
-	});
-	</script>
-
-    <h2>This is a heading</h2>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <button type="button">Click me</button>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="<?php echo U('navcat/index');?>"><?php echo L('ADMIN_NAVCAT_INDEX');?></a></li>
+			<li><a href="<?php echo U('navcat/add');?>"><?php echo L('ADMIN_NAVCAT_ADD');?></a></li>
+		</ul>
+		<form class="form-horizontal js-ajax-form" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="100">ID</th>
+						<th><?php echo L('NAME');?></th>
+						<th><?php echo L('DESCRIPTION');?></th>
+						<th width="120"><?php echo L('MAIN_NAVCAT');?></th>
+						<th width="120"><?php echo L('ACTIONS');?></th>
+					</tr>
+				</thead>
+				<?php if(is_array($navcats)): foreach($navcats as $key=>$vo): ?><tr>
+					<td><?php echo ($vo["navcid"]); ?></td>
+					<td><?php echo ($vo["name"]); ?></td>
+					<td><?php echo ($vo["remark"]); ?></td>
+					<td><?php $mainmenu=$vo['active']?L('YES'):L('NO'); ?> <?php echo ($mainmenu); ?></td>
+					<td>
+						<a href="<?php echo U('navcat/edit',array('id'=>$vo['navcid']));?>"><?php echo L('EDIT');?></a>|
+						<a href="<?php echo U('navcat/delete',array('id'=>$vo['navcid']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
+					</td>
+				</tr><?php endforeach; endif; ?>
+			</table>
+		</form>
+	</div>
+	<script src="/thinkcmfx/public/js/common.js"></script>
 </body>
-
 </html>
