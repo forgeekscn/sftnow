@@ -14,16 +14,20 @@ class AdminIndexController extends AdminbaseController{
 
 	function edit(){
 
-		$id=$_GET['id'];
-		// $categoryId=$_GET['categoryId'];
+		$id="".$_GET['id'];
+		$categoryId="".$_GET['categoryId'];
 
 		// $data["Id"]=$id;
 		// $data["CategoryId"]=$categoryId;
 		$product=$this->productModel->where("Id=$id")->find();
 		$this->assign("product",$product);
-
-		$this->display(":editW");
-	 
+		if($categoryId=='3'){
+			$this->display(":edit");
+		}else if($categoryId=='4'){
+			$this->display(":editW");
+		}else {
+			// $this->error("");
+		}
 	}
 	 
 	 function edit_post(){
@@ -69,7 +73,7 @@ class AdminIndexController extends AdminbaseController{
 		}else if($_POST["categoryid"]=='4'){
 	 		$this->redirect("AdminIndex/productW");
 		}else {
- 			$this->redirect("AdminIndex/product");
+ 			$this->redirect("AdminIndex/productE");
 		}
 
 	 }
@@ -99,7 +103,14 @@ class AdminIndexController extends AdminbaseController{
 			$query=$this->productModel->where("Id=$id")->select();
 			if(count($query)>0){
 				$this->productModel->where("Id=$id")->delete();
-				$this->redirect("AdminIndex/ProductE");
+
+				if($_GET['categoryId']=='4'){
+					$this->redirect("AdminIndex/ProductW");
+				}else if ($_GET['categoryId']=='3') {
+					$this->redirect("AdminIndex/ProductE");
+				}
+
+				
 			}
 		}
 	}
@@ -108,54 +119,38 @@ class AdminIndexController extends AdminbaseController{
 		$this->display(":addW");
 
 	}
+
+
 	public function productW(){
-		$term=$_POST['term'];
-		$keyword=$_POST['keyword'];
-
-
-		$data['CategoryId']='4';
-		if($term!=0 && $term!=null){
-			$data['Title']=$term;
-
-		}
-		if($keyword!=null){
-			$data['Content']=array('like', "%".$keyword."%");
-
-		} 
-		$productE=$this->productModel->where($data)->order('Id')->page($_GET['p'],5)->select();
-
-		$count      =$this->productModel->where($data)->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
-		$Page->setConfig('header','共 %TOTAL_ROW% 条记录');
-		$Page->setConfig('first','首页');
-		$Page->setConfig('last','尾页');
-
-		$show       = $Page->show();// 分页显示输出
-		$this->assign('page',$show);// 赋值分页输出
-
-		$Titles=$this->productModel->distinct(true)->field('Title')->select();
-		$this->assign("productE",$productE);
-		$this->assign("Titles",$Titles);
-
-		// print_r($productE); 
+		$this->getProductData('4');
 		$this->display(":productW");
 	
 	}
 	public function productE(){
  
+		$this->getProductData('3');
+		$this->display(":productEL");
+	}
+
+
+	function ProductG(){
+		$this->getProductData('5');
+		$this->display(":productG");
+	}
+
+	public function getProductData($categoryId){
 
 		$term=$_POST['term'];
 		$keyword=$_POST['keyword'];
 
 
-		$data['CategoryId']='3';
+		$data['CategoryId']=$categoryId;
 		if($term!=0 && $term!=null){
 			$data['Title']=$term;
 
 		}
 		if($keyword!=null){
 			$data['Content']=array('like', "%".$keyword."%");
-
 		} 
 		$productE=$this->productModel->where($data)->order('Id')->page($_GET['p'],5)->select();
 
@@ -171,16 +166,21 @@ class AdminIndexController extends AdminbaseController{
 		$Titles=$this->productModel->distinct(true)->field('Title')->select();
 		$this->assign("productE",$productE);
 		$this->assign("Titles",$Titles);
-
-		// print_r($productE);
-		$this->display(":productEL");
 	}
 
 
 	function add(){
+		$categoryid=$_GET['categoryid'];
+		if($categoryid=='3'){
+			$this->display(":add");
+		}else if($categoryid=='4'){
+			$this->display(":add");
+		}els if($categoryid=='5'){
+			$this->display(":add");
+		}
 		
 
-		$this->display(":add");
+		
 
 
 
@@ -265,15 +265,7 @@ class AdminIndexController extends AdminbaseController{
 
  
 	}
-
-	function ProductEl(){
-
-		$productE=$this->productModel->where("CategoryId=3")->select();
-
-		// $this->assign("productE",$productE);
-		$this->display(":productE");
-	}
-
+ 
  
 
 
@@ -308,11 +300,6 @@ class AdminIndexController extends AdminbaseController{
 
  
 
-	function ProductG(){
-		$productG=$this->productModel->where("CategoryId=5")->select();
-		$this->assign("productG",$productG);
-		$this->display(":productG");
-	}
 
 
 
