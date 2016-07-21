@@ -58,6 +58,7 @@ var GV = {
             <li class="active"><a href="<?php echo U('AdminIndex/add');?>" target="_self">添加电表</a></li>
         </ul>
         <form action="<?php echo U('AdminIndex/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+        <input type="hidden" name="categoryId" value="3">
             <div class="row-fluid">
                 <div class="span9">
                     <table class="table table-bordered">

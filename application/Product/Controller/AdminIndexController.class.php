@@ -25,9 +25,13 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":edit");
 		}else if($categoryId=='4'){
 			$this->display(":editW");
+		}else if($categoryId=='5'){
+			$this->display(":editG");
 		}else {
-			// $this->error("");
+
 		}
+
+
 	}
 	 
 	 function edit_post(){
@@ -72,8 +76,8 @@ class AdminIndexController extends AdminbaseController{
 	 		$this->redirect("AdminIndex/productE");
 		}else if($_POST["categoryid"]=='4'){
 	 		$this->redirect("AdminIndex/productW");
-		}else {
- 			$this->redirect("AdminIndex/productE");
+		}else if($_POST["categoryid"]=='5'){
+ 			$this->redirect("AdminIndex/productG");
 		}
 
 	 }
@@ -108,6 +112,8 @@ class AdminIndexController extends AdminbaseController{
 					$this->redirect("AdminIndex/ProductW");
 				}else if ($_GET['categoryId']=='3') {
 					$this->redirect("AdminIndex/ProductE");
+				}else if($_GET['categoryId']=='5'){
+					$this->redirect("AdminIndex/ProductG");
 				}
 
 				
@@ -170,13 +176,13 @@ class AdminIndexController extends AdminbaseController{
 
 
 	function add(){
-		$categoryid=$_GET['categoryid'];
+		$categoryid=$_GET['categoryId'];
 		if($categoryid=='3'){
 			$this->display(":add");
 		}else if($categoryid=='4'){
-			$this->display(":add");
-		}els if($categoryid=='5'){
-			$this->display(":add");
+			$this->display(":addW");
+		}else if($categoryid=='5'){
+			$this->display(":addG");
 		}
 		
 
@@ -225,14 +231,35 @@ class AdminIndexController extends AdminbaseController{
 		 
 
 	}
-	function add_post(){
+	public function add_post(){
 
+		$categoryid="".$_POST['categoryId'];
+		$this->datapost($categoryid);
+  		
+  		if($categoryid=='3'){
+  			$this->redirect("AdminIndex/ProductE");
+  		}else if($categoryid=='4'){
+  			$this->redirect("AdminIndex/ProductW");
+  		}else if($categoryid=='5'){
+  			$this->redirect("AdminIndex/ProductG");
+  		}else {
+  			// $this->redirect("AdminIndex/ProductE");
+  		}
+		
+
+ 
+	}
+ 
+ 
+
+	public function datapost($categoryId){
+		$data["CategoryId"]=$categoryId;
 		$data["Title"]=$_POST["Title"];
 		$data["ExtendContent01"]=$_POST["ExtendContent01"];
 		$data["Content"]=$_POST["Content"];
 		$data["ExtendContent03"]=$_POST["ExtendContent03"];
 		$data["ExtendContent02"]=$_POST["ExtendContent02"];
-		$data["CategoryId"]='3';
+		
 		
 		$config = array(
 			'maxSize'    =>    3145728,
@@ -260,14 +287,7 @@ class AdminIndexController extends AdminbaseController{
 	    $data["Id"]=$id;
 		$productE=$this->productModel->add($data);
 		
-  
-		$this->redirect("AdminIndex/ProductE");
-
- 
 	}
- 
- 
-
 
 
 

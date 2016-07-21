@@ -54,57 +54,55 @@ var GV = {
 <body>
     <div class="wrap js-check-wrap">
         <ul class="nav nav-tabs">
-            <li><a href="<?php echo U('AdminIndex/productW');?>">水表管理</a></li>
-            <li class="active"><a href="<?php echo U('AdminIndex/addW');?>" target="_self">添加水表</a></li>
+            <li><a href="<?php echo U('AdminIndex/productG');?>">燃气表管理</a></li>
+            <li class="active"><a href="<?php echo U('AdminIndex/add',array('categoryId','5'));?>" target="_self">添加燃气表</a></li>
         </ul>
-        <form action="<?php echo U('AdminIndex/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
-         <input type="hidden" name="categoryId" value="4">
+        <form action="<?php echo U('AdminIndex/edit_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+
             <div class="row-fluid">
                 <div class="span9">
                     <table class="table table-bordered">
                         <tr>
-                            <th width="80"></th>
+                            
+                          
+                        </tr>
+                        <tr>
+
+                            <th width="80">燃气表名称</th>
                             <td>
+                                <input type="text" style="width:400px;" name="Title" id="title" required value="<?php echo ($product["title"]); ?>" />
+                                
+                                 <input type="hidden" value="<?php echo ($product["categoryid"]); ?>" name="categoryid" />
+      						    <input type="hidden" value="<?php echo ($product["id"]); ?>" name="id" />
                             </td>
                         </tr>
                         <tr>
-                            <th width="80">水表名称</th>
+                            <th>燃气表型号</th>
                             <td>
-                                <input type="text" style="width:400px;" name="Title" id="title" required value="" />
-                                <span class="form-required"></span>
-                            </td>
+                                <input type="text" name="ExtendContent01" id="keywords" value="<?php echo ($product["extendcontent01"]); ?>" style="width: 400px"> </td>
                         </tr>
                         <tr>
-                            <th>水表型号</th>
+                            <th>燃气表简介</th>
                             <td>
-                                <input type="text" name="ExtendContent01" id="keywords" value="" style="width: 400px"> </td>
-                        </tr>
-                        <tr>
-                            <th>水表简介</th>
-                            <td>
-                                <input type="text" name="Content" id="source" value="" style="width: 400px">
+                                <input type="text"  style="width: 98%; height: 100px;"name="Content" id="source" value="" >
                             </td>
                         </tr>
                         <tr>
                             <th>产品特色</th>
                             <td>
-                                <textarea name="ExtendContent03" id="description" required style="width: 98%; height: 50px;" placeholder=""></textarea>
+                                <textarea name="ExtendContent03" id="description" required style="width: 98%; height: 100px;" value="" placeholder=""></textarea>
                             </td>
                         </tr>
                         <tr>
                             <th>功能简介</th>
                             <td>
-                                <textarea name="ExtendContent02" required style="width: 98%; height: 50px;" placeholder=""></textarea>
+                                <textarea name="ExtendContent02" required style="width: 98%; height: 100px;" placeholder="" value=""></textarea>
                         </tr>
                         <tr>
                             <th>样品图</th>
                             <td>
                                 <input type="file" name="photo" />
-                                <fieldset name="photo1">
-                                    <legend></legend>
-                                    <ul id="photos" class="pic-list unstyled"></ul>
-                                </fieldset>
-                                <a href="javascript:;" onclick="javascript:flashupload('albums_images', '图片上传','photos',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn btn-small">选择图片</a>
+                                 
                             </td>
                         </tr>
                     </table>
@@ -122,7 +120,6 @@ var GV = {
     <script type="text/javascript" src="/thinkcmfx/public/js/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" src="/thinkcmfx/public/js/ueditor/ueditor.all.min.js"></script>
     <script type="text/javascript">
-     
     </script>
 </body>
 

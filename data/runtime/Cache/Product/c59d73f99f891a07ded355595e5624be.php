@@ -54,11 +54,11 @@ var GV = {
 <body>
     <div class="wrap js-check-wrap">
         <ul class="nav nav-tabs">
-            <li><a href="<?php echo U('AdminIndex/productW');?>">水表管理</a></li>
-            <li class="active"><a href="<?php echo U('AdminIndex/addW');?>" target="_self">添加水表</a></li>
+            <li><a href="<?php echo U('AdminIndex/productG');?>">燃气表管理</a></li>
+            <li class="active"><a href="<?php echo U('AdminIndex/addG');?>" target="_self">添加燃气表</a></li>
         </ul>
         <form action="<?php echo U('AdminIndex/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
-         <input type="hidden" name="categoryId" value="4">
+        <input type="hidden" name="categoryId"  value="5"/>
             <div class="row-fluid">
                 <div class="span9">
                     <table class="table table-bordered">
@@ -68,19 +68,19 @@ var GV = {
                             </td>
                         </tr>
                         <tr>
-                            <th width="80">水表名称</th>
+                            <th width="80">燃气表名称</th>
                             <td>
                                 <input type="text" style="width:400px;" name="Title" id="title" required value="" />
                                 <span class="form-required"></span>
                             </td>
                         </tr>
                         <tr>
-                            <th>水表型号</th>
+                            <th>燃气表型号</th>
                             <td>
                                 <input type="text" name="ExtendContent01" id="keywords" value="" style="width: 400px"> </td>
                         </tr>
                         <tr>
-                            <th>水表简介</th>
+                            <th>燃气表简介</th>
                             <td>
                                 <input type="text" name="Content" id="source" value="" style="width: 400px">
                             </td>

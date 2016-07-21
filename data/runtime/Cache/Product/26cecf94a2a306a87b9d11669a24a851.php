@@ -71,7 +71,7 @@ table td {
 <body>
     <ul class="nav nav-tabs" id="nav">
         <li class="active"><a href="javascript:;">水表管理</a></li>
-        <li><a href="<?php echo U('AdminIndex/addW');?>" target="_self">添加水表</a></li>
+        <li><a href="<?php echo U('AdminIndex/addW',array('categoryId'=>'4'));?>" target="_self">添加水表</a></li>
     </ul>
     <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productW');?>">
         分类：

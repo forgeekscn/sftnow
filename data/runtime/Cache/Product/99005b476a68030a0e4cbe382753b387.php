@@ -71,7 +71,7 @@ table td {
 <body>
     <ul class="nav nav-tabs" id="nav">
         <li class="active"><a href="javascript:;">电表管理</a></li>
-        <li><a href="<?php echo U('AdminIndex/add');?>" target="_self">添加电表</a></li>
+        <li><a href="<?php echo U('AdminIndex/add',array('categoryId'=>'3'));?>" target="_self">添加电表</a></li>
     </ul>
     <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productE');?>">
         分类：
