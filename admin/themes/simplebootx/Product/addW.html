@@ -1,0 +1,83 @@
+<admintpl file="header" />
+<style type="text/css">
+.pic-list li {
+    margin-bottom: 5px;
+}
+</style>
+</head>
+
+<body>
+    <div class="wrap js-check-wrap">
+        <ul class="nav nav-tabs">
+            <li><a href="{:U('AdminIndex/productW')}">水表管理</a></li>
+            <li class="active"><a href="{:U('AdminIndex/addW')}" target="_self">添加水表</a></li>
+        </ul>
+        <form action="{:U('AdminIndex/addW_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+            <div class="row-fluid">
+                <div class="span9">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th width="80"></th>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="80">水表名称</th>
+                            <td>
+                                <input type="text" style="width:400px;" name="Title" id="title" required value="" />
+                                <span class="form-required"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>水表型号</th>
+                            <td>
+                                <input type="text" name="ExtendContent01" id="keywords" value="" style="width: 400px"> </td>
+                        </tr>
+                        <tr>
+                            <th>水表简介</th>
+                            <td>
+                                <input type="text" name="Content" id="source" value="" style="width: 400px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>产品特色</th>
+                            <td>
+                                <textarea name="ExtendContent03" id="description" required style="width: 98%; height: 50px;" placeholder=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>功能简介</th>
+                            <td>
+                                <textarea name="ExtendContent02" required style="width: 98%; height: 50px;" placeholder=""></textarea>
+                        </tr>
+                        <tr>
+                            <th>样品图</th>
+                            <td>
+                                <input type="file" name="photo" />
+                                <fieldset name="photo1">
+                                    <legend></legend>
+                                    <ul id="photos" class="pic-list unstyled"></ul>
+                                </fieldset>
+                                <a href="javascript:;" onclick="javascript:flashupload('albums_images', '图片上传','photos',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn btn-small">选择图片</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+    <script type="text/javascript">
+    //编辑器路径定义
+    var editorURL = GV.DIMAUB;
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript">
+     
+    </script>
+</body>
+
+</html>

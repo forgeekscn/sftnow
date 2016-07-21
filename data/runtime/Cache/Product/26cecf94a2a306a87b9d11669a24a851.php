@@ -70,10 +70,10 @@ table td {
 
 <body>
     <ul class="nav nav-tabs" id="nav">
-        <li class="active"><a href="javascript:;">电表管理</a></li>
-        <li><a href="<?php echo U('AdminIndex/add');?>" target="_self">添加电表</a></li>
+        <li class="active"><a href="javascript:;">水表管理</a></li>
+        <li><a href="<?php echo U('AdminIndex/addW');?>" target="_self">添加水表</a></li>
     </ul>
-    <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productE');?>">
+    <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productW');?>">
         分类：
         <select class="select_2" name="term">
             <option value='0'>全部</option>
@@ -137,7 +137,7 @@ table td {
                         <td width="200px"><?php echo ($vo["extendcontent01"]); ?></td>
                         <td  > <a href="<?php echo U('AdminIndex/editE');?>">编辑</a> |
                             <?php  $u="asdsa"; ?>
-                            <a href="<?php echo U('AdminIndex/delete',array('id'=>$vo['id']));?>">删除</a></td>
+                            <a href="<?php echo U('AdminIndex/deleteW',array('id'=>$vo['id']));?>">删除</a></td>
                     </tr><?php endforeach; endif; ?>
                 <tfoot>
                     <tr>
