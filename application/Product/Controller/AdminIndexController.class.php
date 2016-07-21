@@ -27,6 +27,10 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":editW");
 		}else if($categoryId=='5'){
 			$this->display(":editG");
+		}else if($categoryId=='7'){
+			$this->display(":editC");
+		}else if($categoryId=='10'){
+			$this->display(":editS");
 		}else {
 
 		}
@@ -78,6 +82,10 @@ class AdminIndexController extends AdminbaseController{
 	 		$this->redirect("AdminIndex/productW");
 		}else if($_POST["categoryid"]=='5'){
  			$this->redirect("AdminIndex/productG");
+		}else if($_POST["categoryid"]=='10'){
+ 			$this->redirect("AdminIndex/ProductSolution");
+		}else if($_POST["categoryid"]=='7'){
+ 			$this->redirect("AdminIndex/productC");
 		}
 
 	 }
@@ -114,6 +122,10 @@ class AdminIndexController extends AdminbaseController{
 					$this->redirect("AdminIndex/ProductE");
 				}else if($_GET['categoryId']=='5'){
 					$this->redirect("AdminIndex/ProductG");
+				}else if($_GET['categoryId']=='7'){
+					$this->redirect("AdminIndex/ProductC");
+				}else if($_GET['categoryId']=='10'){
+					$this->redirect("AdminIndex/ProductSolution");
 				}
 
 				
@@ -183,6 +195,10 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":addW");
 		}else if($categoryid=='5'){
 			$this->display(":addG");
+		}else if($categoryid=='7'){
+			$this->display(":addC");
+		}else if($categoryid=='10'){
+			$this->display(":addS");
 		}
 		
 
@@ -242,6 +258,10 @@ class AdminIndexController extends AdminbaseController{
   			$this->redirect("AdminIndex/ProductW");
   		}else if($categoryid=='5'){
   			$this->redirect("AdminIndex/ProductG");
+  		}else if($categoryid=='5'){
+  			$this->redirect("AdminIndex/ProductC");
+  		}else if($categoryid=='10'){
+  			$this->redirect("AdminIndex/ProductSolution");
   		}else {
   			// $this->redirect("AdminIndex/ProductE");
   		}
@@ -324,20 +344,17 @@ class AdminIndexController extends AdminbaseController{
 
 
 	function ProductSolution(){
-		$ProductSolution=$this->productModel->where("CategoryId=10")->select();
-		$this->assign("productSolution",$ProductSolution);
+		$this->getProductData('10');
 		$this->display(":productSolution");
 	}
 
 	function ProductC(){
-		$productC=$this->productModel->where("CategoryId=7")->select();
-		$this->assign("productC",$productC);
+		$this->getProductData('7');
 		$this->display(":productC");
 	}
 
 	function ProductOther(){
-		$ProductOther=$this->productModel->where("1=1")->select();
-		$this->assign("productOther",$ProductOther);
+		$this->getProductData('10');
 		$this->display(":productOther");
 	}
 

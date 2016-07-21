@@ -70,8 +70,8 @@ table td {
 
 <body>
     <ul class="nav nav-tabs" id="nav">
-        <li class="active"><a href="javascript:;">智能采集器管理</a></li>
-        <li><a href="<?php echo U('AdminIndex/add',array('categoryId'=>'7'));?>" target="_self">添加采集器设备</a></li>
+        <li class="active"><a href="javascript:;">其他产品管理</a></li>
+        <li><a href="<?php echo U('AdminIndex/add',array('categoryId'=>'10'));?>" target="_self">添加产品</a></li>
     </ul>
     <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productE');?>">
         分类：
@@ -133,10 +133,10 @@ table td {
                         <?php  $url="http://localhost:8089/thinkcmfx/public/uploadFiles/images/admin/201304/01.jpg"; $url=$vo["imageurl"]; $url=preg_replace("/\.axd/", "", $url); $url=preg_replace("/\/{2}/", "/", $url); $url1="http://localhost:8089"."/thinkcmfx/public"."".$url; ?>
                         <td width="200px"><img src="<?php echo ($url1); ?>" width="200px" /> </td>
                         <td width="200px"><?php echo ($vo["title"]); ?></td>
-                        <td width="200px"> <?php echo ($vo["content"]); ?> </td>
-                        <td width="200px"><?php echo ($vo["extendcontent01"]); ?></td>
-                        <td  > <a href="<?php echo U('AdminIndex/edit',array('id'=>$vo['id'],'categoryId'=>'7'));?>">编辑</a> |
-                            <a href="<?php echo U('AdminIndex/delete',array('id'=>$vo['id'],'categoryId'=>'7'));?>">删除</a></td>
+                        <td height="200px" width="200px"> <?php echo ($vo["content"]); ?> </td>
+                        <td width="200px"><?php echo ($vo["extendcontent04"]); ?></td>
+                        <td  > <a href="<?php echo U('AdminIndex/edit',array('id'=>$vo['id'],'categoryId'=>'10'));?>">编辑</a> |
+                            <a href="<?php echo U('AdminIndex/delete',array('id'=>$vo['id'],'categoryId'=>'10'));?>">删除</a></td>
                     </tr><?php endforeach; endif; ?>
                 <tfoot>
                     <tr>

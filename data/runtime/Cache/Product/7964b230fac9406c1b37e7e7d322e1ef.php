@@ -54,8 +54,8 @@ var GV = {
 <body>
     <div class="wrap js-check-wrap">
         <ul class="nav nav-tabs">
-            <li><a href="<?php echo U('AdminIndex/productE');?>">水表管理</a></li>
-            <li class="active"><a href="<?php echo U('AdminIndex/add');?>" target="_self">添加水表</a></li>
+            <li><a href="<?php echo U('AdminIndex/productG');?>">智能采集器管理</a></li>
+            <li class="active"><a href="<?php echo U('AdminIndex/add',array('categoryId','7'));?>" target="_self">添加采集器设备</a></li>
         </ul>
         <form action="<?php echo U('AdminIndex/edit_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
 
@@ -68,7 +68,7 @@ var GV = {
                         </tr>
                         <tr>
 
-                            <th width="80">水表名称</th>
+                            <th width="80">名称</th>
                             <td>
                                 <input type="text" style="width:400px;" name="Title" id="title" required value="<?php echo ($product["title"]); ?>" />
                                 
@@ -77,12 +77,12 @@ var GV = {
                             </td>
                         </tr>
                         <tr>
-                            <th>水表型号</th>
+                            <th>型号</th>
                             <td>
                                 <input type="text" name="ExtendContent01" id="keywords" value="<?php echo ($product["extendcontent01"]); ?>" style="width: 400px"> </td>
                         </tr>
                         <tr>
-                            <th>水表简介</th>
+                            <th>简介</th>
                             <td>
                                 <input type="text"  style="width: 98%; height: 100px;"name="Content" id="source" value="" >
                             </td>
