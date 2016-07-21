@@ -1,0 +1,81 @@
+<admintpl file="header" />
+<style type="text/css">
+.pic-list li {
+    margin-bottom: 5px;
+}
+</style>
+</head>
+
+<body>
+    <div class="wrap js-check-wrap">
+        <ul class="nav nav-tabs">
+            <li><a href="{:U('AdminIndex/productSolution')}">企业解决方案管理</a></li>
+            <li class="active"><a href="{:U('AdminIndex/add',array('categoryId','10'))}" target="_self">添加解决方案</a></li>
+        </ul>
+        <form action="{:U('AdminIndex/edit_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+
+            <div class="row-fluid">
+                <div class="span9">
+                    <table class="table table-bordered">
+                        <tr>
+                            
+                          
+                        </tr>
+                        <tr>
+
+                            <th width="80">解决方案</th>
+                            <td>
+                                <input type="text" style="width:400px;" name="Title" id="title" required value="{$product.title}" />
+                                
+                                 <input type="hidden" value="{$product.categoryid}" name="categoryid" />
+      						    <input type="hidden" value="{$product.id}" name="id" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>方案类型</th>
+                            <td>
+                                <input type="text" name="ExtendContent01" id="keywords" value="{$product.extendcontent01}" style="width: 400px"> </td>
+                        </tr>
+                        <tr>
+                            <th>简介</th>
+                            <td>
+                                <input type="text"  style="width: 98%; height: 100px;"name="Content" id="source" value="" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>方案特色</th>
+                            <td>
+                                <textarea name="ExtendContent03" id="description" required style="width: 98%; height: 100px;" value="" placeholder=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>方案步骤</th>
+                            <td>
+                                <textarea name="ExtendContent02" required style="width: 98%; height: 100px;" placeholder="" value=""></textarea>
+                        </tr>
+                        <tr>
+                            <th>示意图</th>
+                            <td>
+                                <input type="file" name="photo" />
+                                 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+    <script type="text/javascript">
+    //编辑器路径定义
+    var editorURL = GV.DIMAUB;
+    </script>
+    <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

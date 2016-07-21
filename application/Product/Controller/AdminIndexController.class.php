@@ -29,6 +29,8 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":editG");
 		}else if($categoryId=='7'){
 			$this->display(":editC");
+		}else if($categoryId=='10'){
+			$this->display(":editS");
 		}else {
 
 		}
@@ -80,6 +82,10 @@ class AdminIndexController extends AdminbaseController{
 	 		$this->redirect("AdminIndex/productW");
 		}else if($_POST["categoryid"]=='5'){
  			$this->redirect("AdminIndex/productG");
+		}else if($_POST["categoryid"]=='10'){
+ 			$this->redirect("AdminIndex/ProductSolution");
+		}else if($_POST["categoryid"]=='7'){
+ 			$this->redirect("AdminIndex/productC");
 		}
 
 	 }
@@ -118,6 +124,8 @@ class AdminIndexController extends AdminbaseController{
 					$this->redirect("AdminIndex/ProductG");
 				}else if($_GET['categoryId']=='7'){
 					$this->redirect("AdminIndex/ProductC");
+				}else if($_GET['categoryId']=='10'){
+					$this->redirect("AdminIndex/ProductSolution");
 				}
 
 				
@@ -189,6 +197,8 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":addG");
 		}else if($categoryid=='7'){
 			$this->display(":addC");
+		}else if($categoryid=='10'){
+			$this->display(":addS");
 		}
 		
 
@@ -250,6 +260,8 @@ class AdminIndexController extends AdminbaseController{
   			$this->redirect("AdminIndex/ProductG");
   		}else if($categoryid=='5'){
   			$this->redirect("AdminIndex/ProductC");
+  		}else if($categoryid=='10'){
+  			$this->redirect("AdminIndex/ProductSolution");
   		}else {
   			// $this->redirect("AdminIndex/ProductE");
   		}
@@ -332,8 +344,8 @@ class AdminIndexController extends AdminbaseController{
 
 
 	function ProductSolution(){
-		$this->getProductData('5');
-		$this->display(":ProductSolution");
+		$this->getProductData('10');
+		$this->display(":productSolution");
 	}
 
 	function ProductC(){
@@ -342,7 +354,7 @@ class AdminIndexController extends AdminbaseController{
 	}
 
 	function ProductOther(){
-		$this->getProductData('5');
+		$this->getProductData('10');
 		$this->display(":productOther");
 	}
 
