@@ -27,6 +27,8 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":editW");
 		}else if($categoryId=='5'){
 			$this->display(":editG");
+		}else if($categoryId=='7'){
+			$this->display(":editC");
 		}else {
 
 		}
@@ -114,6 +116,8 @@ class AdminIndexController extends AdminbaseController{
 					$this->redirect("AdminIndex/ProductE");
 				}else if($_GET['categoryId']=='5'){
 					$this->redirect("AdminIndex/ProductG");
+				}else if($_GET['categoryId']=='7'){
+					$this->redirect("AdminIndex/ProductC");
 				}
 
 				
@@ -183,6 +187,8 @@ class AdminIndexController extends AdminbaseController{
 			$this->display(":addW");
 		}else if($categoryid=='5'){
 			$this->display(":addG");
+		}else if($categoryid=='7'){
+			$this->display(":addC");
 		}
 		
 
@@ -242,6 +248,8 @@ class AdminIndexController extends AdminbaseController{
   			$this->redirect("AdminIndex/ProductW");
   		}else if($categoryid=='5'){
   			$this->redirect("AdminIndex/ProductG");
+  		}else if($categoryid=='5'){
+  			$this->redirect("AdminIndex/ProductC");
   		}else {
   			// $this->redirect("AdminIndex/ProductE");
   		}
@@ -324,20 +332,17 @@ class AdminIndexController extends AdminbaseController{
 
 
 	function ProductSolution(){
-		$ProductSolution=$this->productModel->where("CategoryId=10")->select();
-		$this->assign("productSolution",$ProductSolution);
-		$this->display(":productSolution");
+		$this->getProductData('5');
+		$this->display(":ProductSolution");
 	}
 
 	function ProductC(){
-		$productC=$this->productModel->where("CategoryId=7")->select();
-		$this->assign("productC",$productC);
+		$this->getProductData('7');
 		$this->display(":productC");
 	}
 
 	function ProductOther(){
-		$ProductOther=$this->productModel->where("1=1")->select();
-		$this->assign("productOther",$ProductOther);
+		$this->getProductData('5');
 		$this->display(":productOther");
 	}
 
