@@ -135,9 +135,9 @@ table td {
                         <td width="200px"><?php echo ($vo["title"]); ?></td>
                         <td width="200px"> <?php echo ($vo["content"]); ?> </td>
                         <td width="200px"><?php echo ($vo["extendcontent01"]); ?></td>
-                        <td  > <a href="<?php echo U('AdminIndex/editE');?>">编辑</a> |
-                            <?php  $u="asdsa"; ?>
-                            <a href="<?php echo U('AdminIndex/deleteW',array('id'=>$vo['id']));?>">删除</a></td>
+                        <td  > 
+                         <a href="<?php echo U('AdminIndex/edit',array('id'=>$vo['id'],'categoryId'=>'4'));?>">编辑</a> |
+                            <a href="<?php echo U('AdminIndex/delete',array('id'=>$vo['id'],'categoryId'=>'4'));?>">删除</a>
                     </tr><?php endforeach; endif; ?>
                 <tfoot>
                     <tr>

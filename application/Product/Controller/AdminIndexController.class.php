@@ -12,19 +12,67 @@ class AdminIndexController extends AdminbaseController{
 		
 	}
 
-	function editE(){
+	function edit(){
 
-		$this->display(":edit");
-		// if($id==''){
-		// 	$this->display("error");
-		// }
-		// else {
-		// 	$this->assign("id",$id);
-		// 	$this->display(":edit");
+		$id=$_GET['id'];
+		// $categoryId=$_GET['categoryId'];
 
-		// }
+		// $data["Id"]=$id;
+		// $data["CategoryId"]=$categoryId;
+		$product=$this->productModel->where("Id=$id")->find();
+		$this->assign("product",$product);
+
+		$this->display(":editW");
+	 
 	}
-	// }
+	 
+	 function edit_post(){
+	 	 
+	 	$data["CategoryId"]=$_POST["categoryid"];
+		$data["Title"]=$_POST["Title"];
+		$data["ExtendContent01"]=$_POST["ExtendContent01"];
+		$data["Content"]=$_POST["Content"];
+		$data["ExtendContent03"]=$_POST["ExtendContent03"];
+		$data["ExtendContent02"]=$_POST["ExtendContent02"];
+		
+		
+		$config = array(
+			'maxSize'    =>    3145728,
+			'rootPath'   =>    './public/UploadFiles/Images/admin',
+			'savePath'   =>    '',
+			'saveName'   =>    array('uniqid',''),
+			'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
+			'autoSub'    =>    true,
+			'subName'    =>    array('date','Ymd'),
+		);
+		$upload = new \Think\Upload($config);// 实例化上传类
+		 
+		$info   =   $upload->uploadOne($_FILES['photo']);
+	    // if(!$info) {// 上传错误提示错误信息
+	    //     $this->error($upload->getError());
+	    // }else{// 上传成功 获取上传文件信息
+	         // echo $info['savepath'].$info['savename'];
+	    $data["ImageUrl"]= "/UploadFiles/Images//admin".date("Ymd") ."/".$info['savename'];
+	         // /UploadFiles/Images//admin/201304/02.jpg.axd
+	    // }
+
+	    // $idQuery=$this->productModel->field(' MAX(Id) ')->find();
+	    // $id=$idQuery['max(id)'];
+	    //  $id=intval($id)+1;
+	    // $data["Id"]=$id;
+	   $id=$_POST["id"];
+
+		$productE=$this->productModel->where("id=%s",array($id))->save($data);
+		
+		if($_POST["categoryid"]=='3'){
+	 		$this->redirect("AdminIndex/productE");
+		}else if($_POST["categoryid"]=='4'){
+	 		$this->redirect("AdminIndex/productW");
+		}else {
+ 			$this->redirect("AdminIndex/product");
+		}
+
+	 }
 
 
 	public function deleteW($id){
@@ -37,9 +85,7 @@ class AdminIndexController extends AdminbaseController{
 			if(count($query)>0){
 				$this->productModel->where("Id=$id")->delete();
 				$this->redirect("AdminIndex/ProductW");
-				// $productE=$this->productModel->where("CategoryId=4")->select();
-				// $this->assign("productE",$productE);
-				// $this->display(":productEL");
+				 
 			}
 		}
 	}
@@ -53,9 +99,7 @@ class AdminIndexController extends AdminbaseController{
 			$query=$this->productModel->where("Id=$id")->select();
 			if(count($query)>0){
 				$this->productModel->where("Id=$id")->delete();
-				$productE=$this->productModel->where("CategoryId=3")->select();
-				$this->assign("productE",$productE);
-				$this->display(":productEL");
+				$this->redirect("AdminIndex/ProductE");
 			}
 		}
 	}
@@ -98,12 +142,7 @@ class AdminIndexController extends AdminbaseController{
 	
 	}
 	public function productE(){
-
-		// $pageIndex=$_POST['PageIndex'];
-
-		// if($_POST['PageIndex']==null){
-		// 	$pageIndex=1;
-		// }
+ 
 
 		$term=$_POST['term'];
 		$keyword=$_POST['keyword'];
@@ -182,26 +221,8 @@ class AdminIndexController extends AdminbaseController{
 	    $data["Id"]=$id;
 		$productE=$this->productModel->add($data);
 		
- 
-		$data1['CategoryId']='4';
-	 
-		$productE=$this->productModel->where($data1)->order('Id')->page($_GET['p'],5)->select();
-
-		$count      =$this->productModel->where($data1)->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
-		$Page->setConfig('header','共 %TOTAL_ROW% 条记录');
-		$Page->setConfig('first','首页');
-		$Page->setConfig('last','尾页');
-
-		$show       = $Page->show();// 分页显示输出
-		$this->assign('page',$show);// 赋值分页输出
-
-		$Titles=$this->productModel->distinct(true)->field('Title')->select();
-		$this->assign("productE",$productE);
-		$this->assign("Titles",$Titles);
-
+ 		$this->redirect("AdminIndex/productW");
 		 
-		$this->display(":productW");
 
 	}
 	function add_post(){
@@ -239,26 +260,8 @@ class AdminIndexController extends AdminbaseController{
 	    $data["Id"]=$id;
 		$productE=$this->productModel->add($data);
 		
- 
-		$data1['CategoryId']='3';
-	 
-		$productE=$this->productModel->where($data1)->order('Id')->page($_GET['p'],5)->select();
-
-		$count      =$this->productModel->where($data1)->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
-		$Page->setConfig('header','共 %TOTAL_ROW% 条记录');
-		$Page->setConfig('first','首页');
-		$Page->setConfig('last','尾页');
-
-		$show       = $Page->show();// 分页显示输出
-		$this->assign('page',$show);// 赋值分页输出
-
-		$Titles=$this->productModel->distinct(true)->field('Title')->select();
-		$this->assign("productE",$productE);
-		$this->assign("Titles",$Titles);
-
-		 
-		$this->display(":productEL");
+  
+		$this->redirect("AdminIndex/ProductE");
 
  
 	}
@@ -300,30 +303,10 @@ class AdminIndexController extends AdminbaseController{
 
 
 		print_r(json_encode($json, JSON_UNESCAPED_UNICODE) ) ;
-
-
-		// for ($i= 0;$i< count($productE); $i++){
-		// 	for($j= 0;$j< count($productE[$i]); $j++){
-
-		// 		$str= $json['id'];
-		// 		print_r($str);
-
-		// 	}
-		// }
-
-	 // 	$json='{"item1":{"item11":{"n":"chenling","m":"llll"},"sex":"www.111cn.net","age":"25"},
-	 // 			"item2":{"item21":"ling","sex":"女","age":"24"}}';
-		// //$J=json_decode($json);
-		// print_r($productE); 
-
+ 
 	}
 
-
-	// function ProductW(){
-	// 	$productW=$this->productModel->where("CategoryId=4")->select();
-	// 	$this->assign("productW",$productW);
-	// 	$this->display(":productW");
-	// }
+ 
 
 	function ProductG(){
 		$productG=$this->productModel->where("CategoryId=5")->select();
