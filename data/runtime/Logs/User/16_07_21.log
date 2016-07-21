@@ -1,0 +1,14 @@
+[ 2016-07-21T16:58:20+08:00 ] ::1 /thinkcmfx/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+NOTIC: [8] Undefined index: url F:\hechao\wampp\wamp\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-07-21T16:58:26+08:00 ] ::1 /thinkcmfx/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+NOTIC: [8] Undefined index: url F:\hechao\wampp\wamp\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 24 行.
+

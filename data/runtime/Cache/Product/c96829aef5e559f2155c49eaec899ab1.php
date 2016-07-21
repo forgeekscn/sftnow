@@ -54,11 +54,11 @@ var GV = {
 <body>
     <div class="wrap js-check-wrap">
         <ul class="nav nav-tabs">
-            <li><a href="<?php echo U('AdminIndex/productC');?>">企业解决方案管理</a></li>
-            <li class="active"><a href="<?php echo U('AdminIndex/add',array('categoryId'=>'7'));?>" target="_self">添加解决方案</a></li>
+            <li><a href="<?php echo U('AdminIndex/productW');?>">水表管理</a></li>
+            <li class="active"><a href="<?php echo U('AdminIndex/addW');?>" target="_self">添加水表</a></li>
         </ul>
         <form action="<?php echo U('AdminIndex/add_post');?>" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
-        <input type="hidden" name="categoryId"  value="10"/>
+         <input type="hidden" name="categoryId" value="4">
             <div class="row-fluid">
                 <div class="span9">
                     <table class="table table-bordered">
@@ -68,36 +68,36 @@ var GV = {
                             </td>
                         </tr>
                         <tr>
-                            <th width="80">解决方案</th>
+                            <th width="80">水表名称</th>
                             <td>
                                 <input type="text" style="width:400px;" name="Title" id="title" required value="" />
                                 <span class="form-required"></span>
                             </td>
                         </tr>
                         <tr>
-                            <th>方案类型</th>
+                            <th>水表型号</th>
                             <td>
                                 <input type="text" name="ExtendContent01" id="keywords" value="" style="width: 400px"> </td>
                         </tr>
                         <tr>
-                            <th>简介</th>
+                            <th>水表简介</th>
                             <td>
                                 <input type="text" name="Content" id="source" value="" style="width: 400px">
                             </td>
                         </tr>
                         <tr>
-                            <th>方案特色</th>
+                            <th>产品特色</th>
                             <td>
                                 <textarea name="ExtendContent03" id="description" required style="width: 98%; height: 50px;" placeholder=""></textarea>
                             </td>
                         </tr>
                         <tr>
-                            <th>方案步骤</th>
+                            <th>功能简介</th>
                             <td>
                                 <textarea name="ExtendContent02" required style="width: 98%; height: 50px;" placeholder=""></textarea>
                         </tr>
                         <tr>
-                            <th>示意图</th>
+                            <th>样品图</th>
                             <td>
                                 <input type="file" name="photo" />
                                 <fieldset name="photo1">
