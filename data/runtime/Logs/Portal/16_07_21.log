@@ -1,6 +1,0 @@
-[ 2016-07-21T17:05:46+08:00 ] ::1 /thinkcmfx/index.php?g=Portal&m=AdminPost&a=index&menuid=7
-NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
-
-[ 2016-07-21T17:05:50+08:00 ] ::1 /thinkcmfx/index.php?g=&m=AdminPost&a=add&term=
-NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
-

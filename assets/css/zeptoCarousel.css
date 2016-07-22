@@ -1,0 +1,69 @@
+.responsiveImgPlay img{max-width:100%;height:auto;width: auto;-ms-interpolation-mode:bicubic;vertical-align: middle;min-height: 200px}
+.responsiveImgPlay ul,li{list-style:none;padding:0;margin:0;}
+.responsiveImgPlay p{padding:0 20px;}
+
+/*slider*/
+.responsiveImgPlay #slider-box{position:relative;width:100%;height:175px;overflow:hidden;}
+.responsiveImgPlay #slider {height:100%;overflow:hidden;*zoom:1;-webkit-backface-visibility: hidden;-webkit-transform-style: preserve-3d;}
+.responsiveImgPlay #slider li{width:100%;height:100%;float:left;display:none;}
+.responsiveImgPlay #slider li.active{display:block;-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.responsiveImgPlay #slider li img{width:100%;}
+.responsiveImgPlay #arrow {position:absolute;bottom:10px;right:10px;}
+.responsiveImgPlay #arrow li{width:12px;height:12px;float:left;display:inline-block;margin: 0 3px;background-color: #d5dbd6;border-radius: 50%;-webkit-border-radius: 50%;}
+.responsiveImgPlay #arrow li.active{background-color:#c95122;}
+
+@-webkit-keyframes lightSpeedIn {
+  0% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  0% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    -ms-transform: translateX(100%) skewX(-30deg);
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    -ms-transform: translateX(-20%) skewX(30deg);
+    transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    -ms-transform: translateX(0%) skewX(-15deg);
+    transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    -ms-transform: translateX(0%) skewX(0deg);
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}

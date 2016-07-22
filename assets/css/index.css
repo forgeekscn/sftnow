@@ -1,0 +1,201 @@
+html,body{padding: 0;margin: 0;background-color: white;height: 100%}
+/*工具样式*/
+.menu_toggle_item{
+    list-style: none;
+    width: 23px;
+    /* height: 3px; */
+    background-color: #636161;
+    margin: 6px 0;
+    padding: 1px 0;
+}
+.menu_toggle{
+    padding: 2px 8px;
+    border:  1px solid #E2DDDD;
+    border-radius: 5px;
+}
+.menu_toggle:hover{
+    cursor: pointer;
+    border: 1px solid #b8b3b3;
+}
+.clear{clear: both}
+
+/*header部分样式*/
+header a{text-decoration: none;color: #E8E4E4}
+header .head_top{height: 25px;
+    background-color: #1c5992;
+    line-height: 25px;
+    width: 100%;
+}
+header .head_top .content{
+    margin-left: 21%;
+    margin-right: 21%;
+    color: #E8E4E4;
+    font-size: 12px;
+    overflow: hidden;
+}
+header .head_top .content .head_top_right{float:right}
+header .XLweib{margin-right: 50px}
+header .head_top_right img{position: relative;top: 4px;right: 7px;border: 0}
+
+header .nav{width: 100%;}
+header .nav_header .menu{float: right;margin: 0;padding: 0}
+header .nav_header ul.menu li{
+    list-style: none;
+    float: left;
+    padding: 25px 20px 22px;
+}
+header .nav_header ul.menu .liHover{
+    background-color: #1C5992;
+    position: relative;
+    color: white;
+}
+header .nav_header ul.menu .dropHover{
+    background: url(../images/index/drop.png);
+    /* background-size: 20px 10px; */
+    width: 10px;
+    /* display: block; */
+    height: 10px;
+    background-repeat: repeat;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 44%;
+}
+header .nav_header ul.menu li{
+    color: #4C4C4C;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+header .menu_toggle{float: right;display: none;margin: 6px}
+header .nav_header .menu_toggle_dropDown_con{
+    width: 200px;
+    background-color: #4b4b4b;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+header .nav_header .menu_toggle_dropDown_con li{
+    font-size: 24px;
+    color: white;
+    font-family: “微软雅黑”;
+    border-bottom: 1px solid #8C8888;
+    padding: 0 25px;
+    line-height: 70px;
+}
+
+/*轮播图*/
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides>li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides>li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0;
+    height: auto;
+    min-height: 166px;
+    cursor: pointer;
+    transition: all 5s;
+}
+.rslides img:hover{
+    transform: scale(1.2);
+    transform: scale(1)\9\0;
+}
+.rslides_tabs{  position: absolute;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+.rslides_tabs li{list-style: none;display: inline-block;padding: 0 1%}
+.rslides_tabs li a{    display: inline-block;
+    background: url(../images/lunboImg/lunboItem.png) no-repeat center;
+    width: 13px;
+    height: 13px;
+}
+.rslides_tabs .rslides_here a{  display: inline-block;
+    background: url(../images/lunboImg/lunboItemActive.png) no-repeat center;
+    width: 13px;
+    height: 13px;}
+
+article{margin-top: 80px}
+article .header,.footer-content .header{position: relative;}
+article .header h2,.footer-content .header h2{
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    margin: 0;
+}
+article .header h5,.footer-content .header h5{text-align: center;
+    color: #999;
+    margin: 0;
+}
+article .header hr,.footer-content .header hr{
+    width: 9%;
+    border: 0;
+    border-top: 1px solid red;
+}
+article .content{text-align: center;margin-top: 85px;position: relative}
+article .content ul{margin: 0;padding: 0}
+article .content li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 2%;
+}
+
+.footer-content{ }
+.footer-content .aboutUs{overflow: hidden;background-color: #ECF0F1;}
+.footer-content .introduce{
+    width: 624px;
+    color: #212020;
+    margin: 16px auto;
+    line-height: 2em;
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+.footer-content .introduce_idea{}
+.footer-content .introduce_idea ul{    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;}
+.footer-content .introduce_idea li{    list-style: none;
+    display: inline-block;
+    width: 175px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    padding: 0 3%;
+    position: relative;
+}
+.footer-content .introduce_idea li .tit{color: #999999;margin: 21px 0 11px}
+.footer-content .news{margin-top: 25px}
+

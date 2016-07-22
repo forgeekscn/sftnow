@@ -1,0 +1,27 @@
+[ 2016-07-22T15:55:37+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=route&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\RouteModel
+
+[ 2016-07-22T15:56:20+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-22T16:13:11+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-22T16:13:18+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-22T16:14:02+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-07-22T17:05:02+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=route&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\RouteModel
+
+[ 2016-07-22T17:05:07+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=route&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\RouteModel
+
+[ 2016-07-22T17:05:08+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=route&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\RouteModel
+
+[ 2016-07-22T17:05:15+08:00 ] ::1 /thinkcmfx/index.php?g=Admin&m=route&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\RouteModel
+
