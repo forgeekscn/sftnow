@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"sli",
+				"slideDown	.slideDown()"
+			],
+			[
+				"sl",
+				"slideUp	.slideUp()"
+			],
+			[
+				"fadet",
+				"fadeto	.fadeTo()"
+			],
+			[
+				"if",
+				"iframe	Tag"
+			],
+			[
+				"data",
+				"datapost"
+			],
+			[
+				"ca",
+				"categoryid"
+			],
+			[
+				"dat",
+				"data"
+			],
+			[
 				"dis",
 				"display"
 			],
@@ -96,34 +124,10 @@
 	"buffers":
 	[
 		{
-			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productEL.html",
+			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Main/index.html",
 			"settings":
 			{
-				"buffer_size": 7425,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/README.md",
-			"settings":
-			{
-				"buffer_size": 75,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/heek.sql",
-			"settings":
-			{
-				"buffer_size": 1347424,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html",
-			"settings":
-			{
-				"buffer_size": 8462,
+				"buffer_size": 2000,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,60 +135,8 @@
 			"file": "AdminIndexController.class.php",
 			"settings":
 			{
-				"buffer_size": 5996,
+				"buffer_size": 9110,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/AdminPostController.class.php",
-			"settings":
-			{
-				"buffer_size": 14815,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"name": "Xdebug Context",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"name": "Xdebug Watch",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"name": "Xdebug Stack",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "=> F:\\hechao\\wampp\\wamp\\www\\ThinkCMFX\\admin\\themes\\simplebootx\\Product\\productEL.html\n	|+| 86\n=> F:\\hechao\\wampp\\wamp\\www\\ThinkCMFX\\application\\Product\\Controller\\AdminIndexController.class.php\n	|+| 32\n	|+| 39\n	|+| 56\n	|+| 60\n	|+| 106\n=> F:\\hechao\\wampp\\wamp\\www\\ThinkCMFX\\test.php\n	|+| 3\n	|+| 5\n",
-			"settings":
-			{
-				"buffer_size": 296,
-				"line_ending": "Windows",
-				"name": "Xdebug Breakpoint",
-				"read_only": true,
-				"scratch": true
 			}
 		}
 	],
@@ -195,10 +147,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 242.0,
-		"last_filter": "view",
+		"height": 32.0,
+		"last_filter": "xdebug",
 		"selected_items":
 		[
+			[
+				"xdebug",
+				"Xdebug: Stop Debugging"
+			],
 			[
 				"view",
 				"View: Toggle Menu"
@@ -216,10 +172,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"xdebug",
-				"Preferences: Xdebug Settings – User"
-			],
-			[
 				"xde",
 				"Xdebug: Start Debugging"
 			],
@@ -232,7 +184,7 @@
 				"Git: Init"
 			]
 		],
-		"width": 528.0
+		"width": 414.0
 	},
 	"console":
 	{
@@ -252,65 +204,71 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/F/hechao/wampp/wamp/www/ThinkCMFX",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/public"
-	],
 	"file_history":
 	[
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/public/js/common.js",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/add.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/recyclebin.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/edit.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Menu/lists.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Menu/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/README.md",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Comment/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/boot/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Index/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller/AdminIndexController.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/public/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Controller/AdminIndexController.class.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/AdminPostController.class.php",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/add.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/addFC.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/newsFC.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/test.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/newsFW.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/addFW.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Menu/admin_adminindex.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/editS.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productC.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/editC.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productSolution.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/addC.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/addS.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productOther.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/addG.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productW.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productEL.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/addW.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/editW.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productG.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/add.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/editG.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/edit.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productE.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/data/runtime/Cache/Product/26cecf94a2a306a87b9d11669a24a851.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/heek.sql",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/simplewind/Core/Library/Think/Think.class.php",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/edit.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/public/js/common.js",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/recyclebin.html",
+		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/add.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/data/runtime/Cache/Product/9735c5ec9a4891ab7dcce9548371f0aa.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/data/runtime/Cache/Product/99005b476a68030a0e4cbe382753b387.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/simplewind/Core/Library/Think/Hook.class.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/simplewind/Core/Library/Think/App.class.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/simplewind/Core/Library/Think/Log.class.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/simplewind/Core/Library/Think/Controller.class.php",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller/AdminIndexController.class.php",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/test.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller/sftnow.sublime-project",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productEL.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Main/index.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/index.php",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productE.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/a.txt",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/delete.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/error.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productW.html",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/index.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/add.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/edit.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Public/assets/js/index.js",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/News/Controller/AdminIndexController.class.php",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productC.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productG.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productSolution.html",
-		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productOther.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Model/PluginProductItemModel.class.php",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/News/AdminIndex/newsFromWorld.html",
 		"/F/hechao/wampp/wamp/www/ThinkCMFX/application/Product/Controller/IndexController.class.php",
@@ -383,6 +341,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"term",
+			");\n",
+			"delete",
+			"5",
+			"=;\n",
+			"edit",
 			"css",
 			"pagination",
 			"flashupload",
@@ -429,37 +393,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Product/productEL.html",
+					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Admin/Main/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7425,
+						"buffer_size": 2000,
 						"regions":
 						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										1452,
-										1456
-									]
-								],
-								"scope": "variable.parameter"
-							}
 						},
 						"selection":
 						[
 							[
-								2559,
-								2559
+								1185,
+								1185
 							]
 						],
 						"settings":
@@ -471,15 +422,15 @@
 								{
 									"1":
 									[
-										2721,
-										2727
+										1191,
+										1192
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/tag.png",
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -487,8 +438,8 @@
 								{
 									"1":
 									[
-										2558,
-										2564
+										1162,
+										1163
 									]
 								},
 								"unmatched":
@@ -497,16 +448,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -517,394 +463,73 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"is_xml": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 75,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								75,
-								75
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"is_xml": false,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/heek.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1347424,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/SQL/SQL.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
+						"translation.y": 271.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8462,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								523,
-								523
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										522,
-										523
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										511,
-										512
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 1,
 					"file": "AdminIndexController.class.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5996,
+						"buffer_size": 9110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1118,
-								1118
+								3748,
+								3748
 							]
 						],
 						"settings":
@@ -916,8 +541,8 @@
 								{
 									"1":
 									[
-										1122,
-										1123
+										3750,
+										3751
 									]
 								},
 								"icon":
@@ -932,8 +557,8 @@
 								{
 									"1":
 									[
-										1092,
-										1093
+										3683,
+										3684
 									]
 								},
 								"unmatched":
@@ -942,6 +567,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -952,21 +602,16 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -976,356 +621,29 @@
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_default_content"
 							],
 							"is_xml": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 853.0,
+						"translation.x": -0.0,
+						"translation.y": 2268.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/F/hechao/wampp/wamp/www/ThinkCMFX/application/Portal/Controller/AdminPostController.class.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5815,
-								5815
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										6822,
-										6823
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										4545,
-										4546
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"is_xml": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2808.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 8,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								296,
-								296
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1369,7 +687,7 @@
 		"rows":
 		[
 			0.0,
-			0.831851851852,
+			0.925925925926,
 			1.0
 		]
 	},
@@ -1428,22 +746,12 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"17":
-				{
-					"group": 0,
-					"index": 2
-				},
-				"18":
+				"288":
 				{
 					"group": 0,
 					"index": 0
 				},
-				"966":
-				{
-					"group": 0,
-					"index": 3
-				},
-				"970":
+				"298":
 				{
 					"group": 0,
 					"index": 1
@@ -1481,7 +789,7 @@
 				"rows":
 				[
 					0.0,
-					0.842222222222,
+					0.925925925926,
 					1.0
 				]
 			}

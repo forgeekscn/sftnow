@@ -1,36 +1,74 @@
 <admintpl file="header" />
 <style>
-.home_info li em {
-    float: left;
-    width: 120px;
-    font-style: normal;
-}
+	.home_info li em {
+		float: left;
+		width: 120px;
+		font-style: normal;
+	}
 
-li {
-    list-style: none;
-}
+	li {
+		list-style: none;
+	}
 </style>
 <script src="__PUBLIC__/js/common.js"></script>
 <script src="__PUBLIC__/js/jquery.js"></script>
 </head>
 
 <body>
-    <?php  
+	<?php  
 	// R('Product/AdminIndex/productE');
 	// redirect(U('Product/AdminIndex/productE'), 1, '页面跳转中...');
 	// $this->redirect(U('Product/AdminIndex/productE'));
 	?>
 
 	<script type="text/javascript">
-	$(document).ready(function() {
-		$("p").hide();
+		
+		$(document).ready(function() {
+
+			$("button").click(function(){
+				var div=$("div");
+				div.animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},200).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},200).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},100).animate({height:'300px',opacity:'0.4'},200).animate({height:'300px',opacity:'0.4'},100);
+				div.animate({width:'300px',opacity:'0.8'},200);
+				div.animate({height:'100px',opacity:'0.4'},1000);
+				div.animate({width:'100px',opacity:'0.8'},100);
+			});
+			// $("[type$='n']").hide();
+
+
+			// $("button").mouseover(function() {
+				
+			// 	$("p").toggle(2000);
+			// });
+
+			// $("p").fadeToggle(2000);
+			// $(".ad").fadeto(1000,0.02);
+			// $("p").slideUp('2000', function() {
+				
+			// });
+
+			// $("button").click(function() {
+				
+			// 	$("div").animate({
+			// 		up: '200px',
+			// 		opacity: '0.5'},
+			// 		2000, function() {
+			// 		/* stuff to do after animation is complete */
+			// 	});
+			// });
+
+
 	});
+
 	</script>
 
-    <h2>This is a heading</h2>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <button type="button">Click me</button>
+	<a href="aaaa" class="ad" id="ss">asdas</a>
+	<h2>This is a heading</h2>
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<div style="background: #2f2 ; width:100px;height:100px;" ></div>
+	<button type="button">Click me</button>
+
+
 </body>
 
 </html>
