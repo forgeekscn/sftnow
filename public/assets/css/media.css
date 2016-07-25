@@ -7,7 +7,7 @@
         float: left;
     }
 }
-@media screen and (max-width: 976px) {
+/*@media screen and (max-width: 976px) {
     header .menu_toggle{
         display: block;
     }
@@ -15,13 +15,14 @@
         display: none;
     }
     header .nav_header .logo{float: left;margin-left: 20%}
+
 }
 @media screen and  (min-width: 976px){
     header .nav_header{width: 976px;margin: 0 auto}
     header .nav_header .logo{float: left;padding: 8px 0}
     header .nav_header .menu_toggle_dropDown_con{display: none!important;}
     body{right: 0!important;}
-}
+}*/
 @media screen and  (max-width: 399px){
     header .nav_header .menu_toggle_dropDown_con{
         top:75px;
@@ -41,5 +42,49 @@
 @media screen and (max-width: 780px){
     article .content li{display: block;padding: 15px 0}
     article .content{margin-top: -7px}
+
+}
+@media screen and (max-width: 993px){
+    header .menu_toggle{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
+    header .nav_header .logo{float: left;margin-left: 20%}
+    .footer-content .news .news_content .left,.footer-content .news .news_content .right{
+        display: block;
+        margin: 24px auto;
+        width: 440px;
+    }
+
+}
+@media screen and (min-width: 994px){
+    header .nav_header{width: 976px;margin: 0 auto}
+    header .nav_header .logo{float: left;padding: 8px 0}
+    header .nav_header .menu_toggle_dropDown_con{display: none!important;}
+    body{right: 0!important;}
+    .footer-content .news .news_content .contain{
+        height: 155px;
+        width: 885px;
+        margin: 30px auto;
+    }
+    .footer-content .news .news_content .left{float: left}
+    .footer-content .news .news_content .right{float: right}
+}
+@media screen and (max-width: 470px){
+    .footer-content .news .news_content .left,.footer-content .news .news_content .right{
+        width: 258px;
+    }
+}
+
+@media screen and (max-width: 748px){
+    footer .item_tit{display: block!important;}
+    footer .introduce{text-align: left}
+    footer .item_add{display: block!important;cursor: pointer}
+    footer .right{float: left!important;}
+    footer .item_tit{transition: height 1s}
+}
+@media screen and (min-width: 749px){
 
 }

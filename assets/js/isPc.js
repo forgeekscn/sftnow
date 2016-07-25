@@ -10,8 +10,11 @@
          document.write("<script src='assets/plugins/jquery-1.9.1.min.js'></script>");
          document.write("<script src='assets/js/index.js'></script>");
          document.write("<script src='assets/js/responsiveImg.js'></script>");
-         document.write("<script src='assets/js/lunbo.js'></script>");}
-         document.write("<script src='assets/plugins/jquery.fullPage.min.js'></script>");
+         document.write("<script src='assets/js/lunbo.js'></script>");
+         if(document.body.clientWidth>998){
+             document.write("<script src='assets/plugins/jquery.fullPage.min.js' class='fullpage'></script>");
+         }
+     }
  }
 
  IsPC();

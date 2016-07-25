@@ -58,3 +58,18 @@ NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
 [ 2016-07-25T14:13:31+08:00 ] 192.168.9.172 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=add&categoryId=10
 NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
 
+[ 2016-07-25T14:39:44+08:00 ] 192.168.9.37 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-25T14:40:04+08:00 ] 192.168.9.37 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productW&menuid=166
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-25T14:40:23+08:00 ] 192.168.9.37 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-25T14:40:42+08:00 ] 192.168.9.37 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-25T15:01:50+08:00 ] 192.168.9.172 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+

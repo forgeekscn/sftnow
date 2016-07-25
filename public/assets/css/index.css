@@ -1,4 +1,5 @@
-html,body{padding: 0;margin: 0;background-color: white;height: 100%}
+html,body{padding: 0;margin: 0;height: 100%}
+body{background-color: white;}
 /*工具样式*/
 .menu_toggle_item{
     list-style: none;
@@ -198,4 +199,54 @@ article .content li{
 }
 .footer-content .introduce_idea li .tit{color: #999999;margin: 21px 0 11px}
 .footer-content .news{margin-top: 25px}
+.footer-content .news .news_content{width: 100%}
+.footer-content .news .news_content .left,.footer-content .news .news_content .right{font-size: 12px;width: 406px;font-family: 微软雅黑;display: inline-block;position: relative}
+.footer-content .news .news_content  .summary{height: 95px}
+.footer-content .news .news_content  .summary img{float: left}
+.footer-content .news .news_content  .summary .summary_content{display: inline-block;
+    float: right;
+    width: 260px;
+    margin-top: 10px;
+    line-height: 17px;}
+.footer-content .news .news_content  .summary .summary_content .tit{    font-size: 13px;  font-weight: bolder;}
+.footer-content .news .news_content  .summary .summary_content .con{color: #AFABAB}
+.footer-content .news .news_content  .newsList{    margin: 0;
+    padding: 0;
+    line-height: 20px;}
+.footer-content .news .news_content  .newsList .time{
+    float: right;
+    color: #999999;
+}
+
+
+footer{background-color: #275d96;overflow: hidden}
+footer .contain{margin-left: 16%;margin-right: 16%}
+footer .introduce{width: 100%;text-align: center}
+footer .introduce .item_tit{    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin: 14px 18px;
+    font-size: 15px;
+    color: white;
+    font-family: 微软雅黑;
+    overflow: hidden;
+    position: relative;
+}
+footer .introduce .item{font-size: 12px;padding: 5px 0}
+footer hr{
+    border:0;
+    border-top:1px solid #3473bc;
+    width: 542px;
+}
+footer .bottom{
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+footer .left{float: left}
+footer .right{float: right}
+footer img{position: relative;top: 5px}
+footer .addressItem{margin: 5px 0}
+
+
 

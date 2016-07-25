@@ -1,6 +1,7 @@
 $(function(){
     navBarOption.init();
     carousel.init();
+    footer.init();
     fullpage.init();
 });
 
@@ -105,6 +106,47 @@ var carousel= {
     }
 };
 
+
+var footer={
+    bianliang:{"产品中心":["预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充"],"企业简介":["董事长致辞","组织结构","品质保障","公司简介","资质荣誉"],"成功案例":["成功案例"],"服务项目":["服务项目","AO登陆"],"招纳贤士":["社会招聘","校园招聘"]},
+    address:["武汉盛帆电子股份有限公司版权所有 鄂ICP备06778号","中国·武汉市江夏区经济开发区阳光大道9号"],
+    tel:"15255646666",
+    footerOption:function(){
+        for(o in this.bianliang){
+            var item_tit=$("<div class='item_tit'></div>");
+            var item_add=$("<div class='item_add' style='position:absolute;right:0;top:0;display: none'>＋</div>");
+            item_tit.html(o);
+            for(var i=0;i<footer.bianliang[o].length;i++){
+                var item=$("<div class='item'></div>");
+                item.html(footer.bianliang[o][i]);
+                item_tit.append(item);
+                item_tit.append(item_add);
+            }
+            $("footer .introduce").append(item_tit);
+        }
+        var address=$("<div class='address'></div>");
+        for(var j=0;j<this.address.length;j++){
+            var addressItem=$("<div class='addressItem'></div>");
+            addressItem.html(this.address[j]);
+            address.append(addressItem);
+        }
+        $("footer .bottom .left").append(address);
+        $("footer .bottom .right .tel").html(this.tel);
+    },
+    addClick:function(){
+        $("footer .item_tit .item").css("display","none");
+        $("footer .item_add").each(function(x){
+            $(this).click(function(){
+               $(this).siblings(".item").slideToggle();
+            });
+        });
+    },
+    init:function(){
+        this.footerOption();
+        this.addClick();
+    }
+};
+
 var fullpage={
     cssRemake:function(){
         $(".aboutUs .header").css({"top":"-57px"});
@@ -112,15 +154,19 @@ var fullpage={
         $(".aboutUs .introduce_idea li").eq(0).css({"left":-$(window).width()/2});
         $(".aboutUs .introduce_idea li").eq(2).css({"left":$(window).width()/2});
         $(".aboutUs .introduce_idea li").eq(1).css({"top":200});
+        $("html").attr("style","none");
     },
     reload:function(){
-        $(function(){
+            autoScrolling();
+            $(window).resize(function(){
+                autoScrolling();
+            });
             $('#fullpage').fullpage({
                 scrollingSpeed:1000,
                 'verticalCentered': false,
                 'css3': false,
-                anchors: ['page1', 'page2'],
-                'navigation': true,
+                anchors: ['page1', 'page2','page3'],
+                'navigation': false,
                 'navigationPosition': 'right',
                 afterLoad: function(anchorLink, index){
                     if(index==1){
@@ -134,7 +180,6 @@ var fullpage={
                         $(".aboutUs .introduce_idea li").eq(2).animate({"left":0},1000);
                         $(".aboutUs .introduce_idea li").eq(1).animate({"top":0},1000);
                     }
-
                 },
                 onLeave:function(index ,nextIndex,direction){
                     if(nextIndex==2 ){
@@ -149,11 +194,41 @@ var fullpage={
                         $(".aboutUs .introduce_idea li").eq(1).animate({"top":200},1000);
                     }
                 }
-            })
-        })
+            });
+            function autoScrolling(){
+                var $ww = $(window).width();
+                if($ww < 993){
+                    //$('#fullpage').fullpage({"onLeave":function(){return false},"afterLoad":function(){return false}});
+                    $.fn.fullpage.destroy('all');
+                }
+            }
+
     },
-    init:function(){
-        this.cssRemake();
-        this.reload()
+    init:function() {
+        fullpage.cssRemake();
+        if($(window).width()>993){
+            fullpage.reload()
+        }else{
+            $(".aboutUs .header").css({"top":0});
+            $(".aboutUs .introduce").show();
+            $(".aboutUs .introduce_idea li").eq(0).css({"left":0});
+            $(".aboutUs .introduce_idea li").eq(2).css({"left":0});
+            $(".aboutUs .introduce_idea li").eq(1).css({"top":0});
+        }
+        $(window).resize(function(){
+            if($(this).width()>993){
+                //fullpage.cssRemake();
+                fullpage.reload();
+            }else{
+                $(".aboutUs .header").css({"top":0});
+                $(".aboutUs .introduce").show();
+                $(".aboutUs .introduce_idea li").eq(0).css({"left":0});
+                $(".aboutUs .introduce_idea li").eq(2).css({"left":0});
+                $(".aboutUs .introduce_idea li").eq(1).css({"top":0});
+                $(".fullpage").remove();
+                location.reload();
+            }
+        });
     }
 };
+

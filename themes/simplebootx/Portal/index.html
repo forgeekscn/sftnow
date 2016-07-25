@@ -9,10 +9,10 @@
     <meta name="keywords" content="武汉盛帆电子股份有限公司,水、电、气的计量、抄表和收费的解决方案。">
     <meta name="description" content="武汉盛帆电子股份有限公司位于中国光谷的汤逊湖畔，是武汉市重点推荐的高新技术企业。公司现有员工500余名，其中本科及以上学历人员180余人，2008年公司资产和销售额均超过亿元。目前，公司已通过ISO9001、ISO14001和OHSAS18001系列认证。">
     <title>水、电、气的计量、抄表和收费的专业解决方案提供商-盛帆电子</title>
-    <link rel="stylesheet" href="__PUBLIC__/assets/css/zeptoCarousel.css">
-    <link rel="stylesheet" href="__PUBLIC__/assets/css/index.css">
-    <link rel="stylesheet" href="__PUBLIC__/assets/css/jquery.fullPage.css">
-    <link rel="stylesheet" href="__PUBLIC__/assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/zeptoCarousel.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <!--[if IE]>
     <script>
         (function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
@@ -27,9 +27,6 @@
 </head>
 
 <body>
-    <?php  
-        // redirect(U('Product/Index/getproduct'));
-    ?>
     <div id="fullpage">
         <div class="section">
             <!--首页头部(包括头部和导航菜单)-->
@@ -106,12 +103,84 @@
                         <hr>
                         <h5>公司新闻</h5>
                     </div>
-                    <div class="news_content"></div>
+                    <div class="news_content">
+                        <div class="contain">
+                            <div class="left">
+                                <div class="summary">
+                                    <img src="assets/images/index/c7.png" alt="">
+                                    <div class="summary_content">
+                                        <div class="tit">情系灾民·益路通行-盛帆股份向湖北省...</div>
+                                        <div class="con">入梅以来,湖北省境内经过四轮强降雨袭击，部分地区受灾严重。7月11日下午，在湖北省救灾会上...</div>
+                                    </div>
+                                </div>
+                                <ul class="newsList">
+                                    <li><span>喜报：盛帆股份顺利通过“双软认证”被认定为软件企业</span><span class="time">2016-06-03</span></li>
+                                    <li><span>盛帆基金在行动：益路同行——仙桃中学举行2016年盛帆...</span><span class="time">2016-05-28</span></li>
+                                    <li><span>盛帆股份中标喜迎2016首季开门红</span><span class="time">2016-05-24</span></li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <div class="summary">
+                                    <img src="assets/images/index/c7.png" alt="">
+                                    <div class="summary_content">
+                                        <div class="tit">情系灾民·益路通行-盛帆股份向湖北省...</div>
+                                        <div class="con">入梅以来,湖北省境内经过四轮强降雨袭击，部分地区受灾严重。7月11日下午，在湖北省救灾会上...</div>
+                                    </div>
+                                </div>
+                                <ul class="newsList">
+                                    <li><span>喜报：盛帆股份顺利通过“双软认证”被认定为软件企业</span><span class="time">2016-06-03</span></li>
+                                    <li><span>盛帆基金在行动：益路同行——仙桃中学举行2016年盛帆...</span><span class="time">2016-05-28</span></li>
+                                    <li><span>盛帆股份中标喜迎2016首季开门红</span><span class="time">2016-05-24</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="section">
+            <footer>
+                <div class="contain">
+                    <div class="introduce"></div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="left"></div>
+                        <div class="right"><img src="assets/images/index/c8.png" alt=""><span class="tel"></span></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-    <script src="__PUBLIC__/assets/js/isPc.js"></script>
+
+    <?php
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        if(stristr($user_agent,'iPad') ||stristr($user_agent,'Android')||stristr($user_agent,'iPhone')  ) {
+    ?>
+        <script src ='assets/plugins/zepto.min.js' ></script>
+        <script src='assets/js/index_mobile.js'></script>
+        <script src='assets/js/zeptoCarousel.js'></script>
+       
+
+    <?php
+        $fb_fs= '移动设备';
+        }else if(stristr($user_agent,'Linux')){
+            $fb_fs= 'Linux';
+        }else{
+         
+    ?>
+        
+        <script src='assets/plugins/jquery-1.9.1.min.js'></script>" 
+        <script src='assets/js/index.js'></script>  
+        <script src='assets/js/responsiveImg.js'></script>" 
+        <script src='assets/js/lunbo.js'></script> 
+        <script src='assets/plugins/jquery.fullPage.min.js' class='fullpage'></script> 
+
+     
+    <?php
+        $fb_fs= 'PC设备';
+        }
+        echo $fb_fs; 
+    ?>
 </body>
 
 </html>

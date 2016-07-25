@@ -1,6 +1,7 @@
 $(function(){
     navBarOption.init();
     carousel.init();
+    footer.init();
 });
 
 
@@ -115,5 +116,55 @@ var carousel= {
     init: function () {
         this.carouselOption();
         this.start();
+    }
+};
+
+var footer={
+    bianliang:{"产品中心":["预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充"],"企业简介":["董事长致辞","组织结构","品质保障","公司简介","资质荣誉"],"成功案例":["成功案例"],"服务项目":["服务项目","AO登陆"],"招纳贤士":["社会招聘","校园招聘"]},
+    address:["武汉盛帆电子股份有限公司版权所有 鄂ICP备06778号","中国·武汉市江夏区经济开发区阳光大道9号"],
+    tel:"15255646666",
+    footerOption:function(){
+        for(o in this.bianliang){
+            var item_tit=$("<div class='item_tit'></div>");
+            var item_add=$("<div class='item_add' style='position:absolute;right:0;top:0;display: none'>＋</div>");
+            var span=$("<span></span>");
+            span.html(o);
+            item_tit.append(span);
+            for(var i=0;i<footer.bianliang[o].length;i++){
+                var item=$("<div class='item'></div>");
+                item.html(footer.bianliang[o][i]);
+                item_tit.append(item);
+                item_tit.append(item_add);
+            }
+            $("footer .introduce").append(item_tit);
+        }
+        var address=$("<div class='address'></div>");
+        for(var j=0;j<this.address.length;j++){
+            var addressItem=$("<div class='addressItem'></div>");
+            addressItem.html(this.address[j]);
+            address.append(addressItem);
+        }
+        $("footer .bottom .left").append(address);
+        $("footer .bottom .right .tel").html(this.tel);
+    },
+    addClick:function(){
+        var arr=["产品中心","企业简介","成功案例","服务项目","招纳贤士"];
+        var flag=true;
+        $("footer .item_tit").css("height", $("footer .item_tit").find("span").height());
+        $("footer .item_add").each(function(x){
+            $(this).click(function(){
+                if(flag){
+                    $(this).parent().css({"height":($(this).siblings(".item").height()+10)*(footer.bianliang[arr[x]].length)});
+                    flag=false;
+                }else {
+                    $(this).parent().css({"height":$(this).siblings("span").height()});
+                    flag=true;
+                }
+            });
+        });
+    },
+    init:function(){
+        this.footerOption();
+        this.addClick();
     }
 };
