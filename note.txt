@@ -1,0 +1,13 @@
+#乱码问题
+#innerHTML用法
+#wamp局域网不能访问 -> http://blog.sina.com.cn/s/blog_48e42dc90101jubj.html
+					-> http://www.cnblogs.com/sbaicl/archive/2012/10/03/2710657.html
+					-> http://www.poguanzi.net/item/32-wampserver-2-5
+##
+修改端口带来的影响
+融合界面
+git同步
+js基础
+去掉调试界面
+##
+

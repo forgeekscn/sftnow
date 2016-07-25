@@ -70,10 +70,10 @@ table td {
 
 <body>
     <ul class="nav nav-tabs" id="nav">
-        <li class="active"><a href="javascript:;">水表管理</a></li>
-        <li><a href="<?php echo U('AdminIndex/addW',array('categoryId'=>'4'));?>" target="_self">添加水表</a></li>
+        <li class="active"><a href="javascript:;">智能采集器管理</a></li>
+        <li><a href="<?php echo U('AdminIndex/add',array('categoryId'=>'7'));?>" target="_self">添加采集器设备</a></li>
     </ul>
-    <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productW');?>">
+    <form class="well form-search" method="post" action="<?php echo U('AdminIndex/productE');?>">
         分类：
         <select class="select_2" name="term">
             <option value='0'>全部</option>
@@ -135,9 +135,8 @@ table td {
                         <td width="200px"><?php echo ($vo["title"]); ?></td>
                         <td width="200px"> <?php echo ($vo["content"]); ?> </td>
                         <td width="200px"><?php echo ($vo["extendcontent01"]); ?></td>
-                        <td  > 
-                         <a href="<?php echo U('AdminIndex/edit',array('id'=>$vo['id'],'categoryId'=>'4'));?>">编辑</a> |
-                            <a href="<?php echo U('AdminIndex/delete',array('id'=>$vo['id'],'categoryId'=>'4'));?>">删除</a>
+                        <td  > <a href="<?php echo U('AdminIndex/edit',array('id'=>$vo['id'],'categoryId'=>'7'));?>">编辑</a> |
+                            <a href="<?php echo U('AdminIndex/delete',array('id'=>$vo['id'],'categoryId'=>'7'));?>">删除</a></td>
                     </tr><?php endforeach; endif; ?>
                 <tfoot>
                     <tr>

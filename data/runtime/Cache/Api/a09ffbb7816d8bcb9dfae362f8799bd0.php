@@ -48,42 +48,38 @@ var GV = {
 <body>
 	<div class="wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="<?php echo U('slidecat/index');?>"><?php echo L('ADMIN_SLIDECAT_INDEX');?></a></li>
-			<li><a href="<?php echo U('slidecat/add');?>"><?php echo L('ADMIN_SLIDECAT_ADD');?></a></li>
+			<li class="active"><a href="<?php echo U('guestbookadmin/index');?>"><?php echo L('API_GUESTBOOKADMIN_INDEX');?></a></li>
 		</ul>
-		<form method="post" class="js-ajax-form" action="<?php echo U('term/listorders');?>">
+		<form method="post" class="js-ajax-form">
 			<table class="table table-hover table-bordered">
 				<thead>
 					<tr>
 						<th width="50">ID</th>
-						<th><?php echo L('NAME');?></th>
-						<th><?php echo L('CATEGORY_KEY');?></th>
-						<th><?php echo L('DESCRIPTION');?></th>
+						<th width="100"><?php echo L('NAME');?></th>
+						<th width="150"><?php echo L('EMAIL');?></th>
+						<th style="min-width: 60px;"><?php echo L('TITLE');?></th>
+						<th><?php echo L('CONTENT');?></th>
+						<th width="120"><?php echo L('TIME');?></th>
 						<th width="120"><?php echo L('ACTIONS');?></th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>0</td>
-						<td><?php echo L('DEFAULT_CATEGORY');?></td>
-						<td></td>
-						<td><?php echo L('DEFAULT_CATEGORY');?></td>
-						<td><?php echo L('NOT_ALLOWED_EDIT');?></td>
-					</tr>
-					<?php if(is_array($slidecats)): foreach($slidecats as $key=>$vo): ?><tr>
-						<td><?php echo ($vo["cid"]); ?></td>
-						<td><?php echo ($vo["cat_name"]); ?></td>
-						<td><?php echo ($vo["cat_idname"]); ?></td>
-						<td><?php echo ($vo["cat_remark"]); ?></td>
+					<?php if(is_array($guestmsgs)): foreach($guestmsgs as $key=>$vo): ?><tr>
+						<td><?php echo ($vo["id"]); ?></td>
+						<td><?php echo ($vo["full_name"]); ?></td>
+						<td><?php echo ($vo["email"]); ?></td>
+						<td><?php echo ($vo["title"]); ?></td>
+						<td><?php echo ($vo["msg"]); ?></td>
+						<td><?php echo ($vo["createtime"]); ?></td>
 						<td>
-							<a href="<?php echo U('slidecat/edit',array('id'=>$vo['cid']));?>"><?php echo L('EDIT');?></a>|
-							<a href="<?php echo U('slidecat/delete',array('id'=>$vo['cid']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
+							<a href="<?php echo U('guestbookadmin/delete',array('id'=>$vo['id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
 						</td>
 					</tr><?php endforeach; endif; ?>
 				</tbody>
 			</table>
+			<div class="pagination"><?php echo ($Page); ?></div>
 		</form>
 	</div>
-	<script src="/thinkcmfx/public/js/common.js"></script>
+	<script src="/thinkcmfx/public/js/common.js?"></script>
 </body>
 </html>

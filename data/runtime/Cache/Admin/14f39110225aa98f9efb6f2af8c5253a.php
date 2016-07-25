@@ -63,7 +63,7 @@ li {
 </head>
 
 <body>
-    <?php  ?>
+    <?php  redirect(U('Product/AdminIndex/productE'), 1, '加载中...'); ?>
     <script type="text/javascript">
     $(document).ready(function() {
         $("#tabs").tabs();

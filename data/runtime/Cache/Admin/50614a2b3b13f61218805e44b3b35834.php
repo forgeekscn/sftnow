@@ -44,37 +44,31 @@ var GV = {
 			z-index:9999;
 		}
 	</style><?php endif; ?>
+<style>
+li {
+	list-style: none;
+}
+</style>
 </head>
 <body>
-	<div class="wrap js-check-wrap">
-		<ul class="nav nav-tabs">
-			<li class="active"><a href="<?php echo U('navcat/index');?>"><?php echo L('ADMIN_NAVCAT_INDEX');?></a></li>
-			<li><a href="<?php echo U('navcat/add');?>"><?php echo L('ADMIN_NAVCAT_ADD');?></a></li>
-		</ul>
-		<form class="form-horizontal js-ajax-form" method="post">
-			<table class="table table-hover table-bordered">
-				<thead>
-					<tr>
-						<th width="100">ID</th>
-						<th><?php echo L('NAME');?></th>
-						<th><?php echo L('DESCRIPTION');?></th>
-						<th width="120"><?php echo L('MAIN_NAVCAT');?></th>
-						<th width="120"><?php echo L('ACTIONS');?></th>
-					</tr>
-				</thead>
-				<?php if(is_array($navcats)): foreach($navcats as $key=>$vo): ?><tr>
-					<td><?php echo ($vo["navcid"]); ?></td>
-					<td><?php echo ($vo["name"]); ?></td>
-					<td><?php echo ($vo["remark"]); ?></td>
-					<td><?php $mainmenu=$vo['active']?L('YES'):L('NO'); ?> <?php echo ($mainmenu); ?></td>
-					<td>
-						<a href="<?php echo U('navcat/edit',array('id'=>$vo['navcid']));?>"><?php echo L('EDIT');?></a>|
-						<a href="<?php echo U('navcat/delete',array('id'=>$vo['navcid']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
-					</td>
-				</tr><?php endforeach; endif; ?>
-			</table>
-		</form>
+	<div class="wrap">
+		<div id="error_tips">
+			<h2><?php echo ($msgTitle); ?></h2>
+			<div class="error_cont">
+				<ul>
+					<li><?php echo ($message); ?></li>
+				</ul>
+				<div class="error_return">
+					<a href="<?php echo ($jumpUrl); ?>" class="btn">返回</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="/thinkcmfx/public/js/common.js"></script>
+	<script>
+		setTimeout(function() {
+			location.href = '<?php echo ($jumpUrl); ?>';
+		}, 3000);
+	</script>
 </body>
 </html>

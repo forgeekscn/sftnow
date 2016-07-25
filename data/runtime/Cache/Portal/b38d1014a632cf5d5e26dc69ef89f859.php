@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <?php  ?>
     <div id="fullpage">
         <div class="section">
             <!--首页头部(包括头部和导航菜单)-->
