@@ -134,7 +134,14 @@ var footer={
         $("footer .bottom .right .tel").html(this.tel);
     },
     addClick:function(){
+     if($(window).width()<748){
+           $("footer .item_tit .item").css("display","none");
+    }
+    $(window).resize(function(event) {
+        if($(this).width()<748){
         $("footer .item_tit .item").css("display","none");
+     }
+    });
         $("footer .item_add").each(function(x){
             $(this).click(function(){
                $(this).siblings(".item").slideToggle();

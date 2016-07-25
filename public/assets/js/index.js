@@ -134,7 +134,6 @@ var footer={
         $("footer .bottom .right .tel").html(this.tel);
     },
     addClick:function(){
-        $("footer .item_tit .item").css("display","none");
         $("footer .item_add").each(function(x){
             $(this).click(function(){
                $(this).siblings(".item").slideToggle();

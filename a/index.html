@@ -9,24 +9,33 @@
 <body>
 
     <script type="text/javascript">
-     
-			 function f(n){
-			 	if(n<=2){
-			 		return 1;
-			 	}else {
-			 		return  f(n-2)+f(n-1);
-			 	}
-			 }	
-			 function f1(var1){
-			 	var rs=f(var1);
-			 	console.log(rs);
-			 	// return rs;
-			}
+     		function f(){
+     			var str="hello\"world";
+     			alert(str.length);
+     		}
+
+     		function f1(){
+     			var patt =/t??t/;
+     			var rs=patt.exec( "test info tsst");
+     			alert(rs);
+     		}
+			//  function f(n){
+			//  	if(n<=2){
+			//  		return 1;
+			//  	}else {
+			//  		return  f(n-2)+f(n-1);
+			//  	}
+			//  }	
+			//  function f1(var1){
+			//  	var rs=f(var1);
+			//  	console.log(rs);
+			//  	// return rs;
+			// }
 			  
 		 
     </script>
 </body>
-	<button id="btn1" type="button" onclick="f1(10)">点我</button>
+	<button id="btn1" type="button" onclick="f1()">点我</button>
 	 
 
 

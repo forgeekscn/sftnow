@@ -153,14 +153,14 @@
     </div>
 
     <?php
- $user_agent = $_SERVER['HTTP_USER_AGENT']; if(stristr($user_agent,'iPad') ||stristr($user_agent,'Android')||stristr($user_agent,'iPhone') ) { ?>
+ $user_agent = $_SERVER['HTTP_USER_AGENT']; if(stristr($user_agent,'iPad') ||stristr($user_agent,'Android')||stristr($user_agent,'iPhone') ||stristr($user_agent,'Linux') ) { ?>
         <script src ='assets/plugins/zepto.min.js' ></script>
         <script src='assets/js/index_mobile.js'></script>
         <script src='assets/js/zeptoCarousel.js'></script>
        
 
     <?php
- $fb_fs= '移动设备'; }else if(stristr($user_agent,'Linux')){ $fb_fs= 'Linux'; }else{ ?>
+ $fb_fs= '移动设备'; }else{ ?>
         
         <script src='assets/plugins/jquery-1.9.1.min.js'></script>" 
         <script src='assets/js/index.js'></script>  
