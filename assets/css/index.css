@@ -124,7 +124,37 @@ header .nav_header .menu_toggle_dropDown_con li{
     cursor: pointer;
     transition: all 5s;
 }
-.rslides img:hover{
+.rslides .img2 {
+    display: block;
+    float: left;
+    border: 0;
+    width: auto;
+}
+.rslides .btngroup{
+    position: absolute;
+    z-index: 10;
+    left: 49%;
+    top: 72%;
+}
+.rslides .btngroup button{
+    padding: 6px 21px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.rslides .btngroup .btn1{
+    margin-right: 10px;
+}
+.rslides .btngroup .btn2{
+    margin-left: 10px;
+}
+.rslides .btngroup .btn_blue{
+    background-color: #1C5791;
+    border: 1px solid #1C5791;
+}
+.rslides .img:hover{
     transform: scale(1.2);
     transform: scale(1)\9\0;
 }
@@ -147,8 +177,9 @@ header .nav_header .menu_toggle_dropDown_con li{
     width: 13px;
     height: 13px;}
 
-article{margin-top: 80px}
-article .header,.footer-content .header{position: relative;}
+/*article{margin-top: 80px}*/
+article{margin: 45px}
+article .header,.footer-content .header{position: relative;margin-top: 25px}
 article .header h2,.footer-content .header h2{
     text-align: center;
     font-family: "微软雅黑";
@@ -164,42 +195,87 @@ article .header hr,.footer-content .header hr{
     border: 0;
     border-top: 1px solid red;
 }
-article .content{text-align: center;margin-top: 85px;position: relative}
+article .content{text-align: center;margin-top: 51px;position: relative}
 article .content ul{margin: 0;padding: 0}
 article .content li{
     list-style: none;
     display: inline-block;
     padding: 0 2%;
+    position: relative;
 }
+article .content img{
+    cursor: pointer;
+}
+article .content li span{    position: absolute;
+    top: 228px;
+    left: 38%;
+    font-family: "微软雅黑";}
+article .content .cover{
+    background-color: #4C4C4C;
+    position: absolute;
+    width: 236px;
+    height: 212px;
+    top: 0;
+    opacity: 0.6;
+}
+article .content .con{
+    position: absolute;
+    top: 0;
+    width: 236px;
+    height: 212px;
+}
+article .content .con img{
+    position: absolute;
+    top: 59px;
+    left: 79px;
+}
+article .content .con span{
+    position: absolute;
+    top: 142px;
+    color: white;
+    font-size: 14px;
+    left: 50px;
+    width: 141px;
+}
+
+
+
 
 .footer-content{ }
 .footer-content .aboutUs{overflow: hidden;background-color: #ECF0F1;}
 .footer-content .introduce{
-    width: 624px;
+    width: 50%;
     color: #212020;
     margin: 16px auto;
     line-height: 2em;
-    text-align: center;
+    text-indent: 25px;
     font-size: 12px;
     font-family: "微软雅黑";
 }
-.footer-content .introduce_idea{}
-.footer-content .introduce_idea ul{    margin: 0;
+.footer-content .introduce_idea{
+    width: 50%;
+    margin: 0 auto;
+}
+.footer-content .introduce_idea ul{margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;}
 .footer-content .introduce_idea li{    list-style: none;
     display: inline-block;
-    width: 175px;
+    /* width: 175px; */
     text-align: center;
     font-size: 12px;
     font-family: "微软雅黑";
-    padding: 0 3%;
+    padding: 0 5%;
     position: relative;
 }
-.footer-content .introduce_idea li .tit{color: #999999;margin: 21px 0 11px}
+.footer-content .introduce_idea li .tit{    color: black;
+    /* margin: 27px 0 11px; */
+    font-size: 19px;
+    margin: 20px 0;}
 .footer-content .news{margin-top: 25px}
 .footer-content .news .news_content{width: 100%}
+.footer-content .news .news_content .title{color: #2c95db;font-size: 16px;font-family: "微软雅黑"}
 .footer-content .news .news_content .left,.footer-content .news .news_content .right{font-size: 12px;width: 406px;font-family: 微软雅黑;display: inline-block;position: relative}
 .footer-content .news .news_content  .summary{height: 95px}
 .footer-content .news .news_content  .summary img{float: left}
@@ -219,13 +295,17 @@ article .content li{
 }
 
 
-footer{background-color: #275d96;overflow: hidden}
+footer{background-color: #275d96;overflow: hidden;margin-top: 60px}
 footer .contain{margin-left: 16%;margin-right: 16%}
 footer .introduce{width: 100%;text-align: center}
+footer .introduce .ewm{
+    display: inline-block;
+    margin-top: 38px;
+}
 footer .introduce .item_tit{    display: inline-block;
     vertical-align: top;
     width: auto;
-    margin: 14px 18px;
+    margin: 14px 2%;
     font-size: 15px;
     color: white;
     font-family: 微软雅黑;
@@ -236,17 +316,19 @@ footer .introduce .item{font-size: 12px;padding: 5px 0}
 footer hr{
     border:0;
     border-top:1px solid #3473bc;
-    width: 542px;
+    width: 854px;
 }
 footer .bottom{
     color: white;
     font-family: "微软雅黑";
     font-size: 12px;
+    overflow: hidden;
+    margin-bottom: 8px;
 }
-footer .left{float: left}
-footer .right{float: right}
-footer img{position: relative;top: 5px}
-footer .addressItem{margin: 5px 0}
+footer .left{float: left;margin-left: 91px}
+footer .right{float: right;    margin-right: 136px;}
+footer img{position: relative;top: 8px}
+footer .addressItem{margin: 11px 0}
 
 
 
