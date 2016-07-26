@@ -1,36 +1,26 @@
-@media screen and (max-width: 595px){
+@media screen and (max-width: 608px){
     .head_top_right{display: none}
     header .head_top .content{text-align: center}
 }
-@media screen and (min-width: 565px) {
+@media screen and (max-width: 514px){
+    header .head_top .content{margin: 0}
+}
+@media screen and (min-width: 609px) {
     header .head_top .content .head_top_left {
         float: left;
     }
 }
-/*@media screen and (max-width: 976px) {
-    header .menu_toggle{
-        display: block;
-    }
-    header .menu{
-        display: none;
-    }
-    header .nav_header .logo{float: left;margin-left: 20%}
-
+@media screen and (max-width: 355px) {
+    article .content ul{margin-left: -9%}
 }
-@media screen and  (min-width: 976px){
-    header .nav_header{width: 976px;margin: 0 auto}
-    header .nav_header .logo{float: left;padding: 8px 0}
-    header .nav_header .menu_toggle_dropDown_con{display: none!important;}
-    body{right: 0!important;}
-}*/
 @media screen and  (max-width: 399px){
     header .nav_header .menu_toggle_dropDown_con{
         top:75px;
         width: 100%;
         z-index: 1000;
     }
-
 }
+
 @media screen and (min-width: 400px){
     body{position: relative; transition: -webkit-transform 1s ease;
         -webkit-transform: translate3d(0, 0, 0);}
@@ -39,10 +29,10 @@
     }
 
 }
-@media screen and (max-width: 780px){
-    article .content li{display: block;padding: 15px 0}
-    article .content{margin-top: -7px}
-
+@media screen and (max-width: 1261px){
+    article .content li{padding: 23px 4%}
+    article .content li span{top: 247px;left: 39%;}
+    article .content .cover{top: 23px}
 }
 @media screen and (max-width: 993px){
     header .menu_toggle{
@@ -78,13 +68,31 @@
     }
 }
 
-@media screen and (max-width: 748px){
+@media screen and (max-width: 789px){
     footer .item_tit{display: block!important;}
     footer .introduce{text-align: left}
     footer .item_add{display: block!important;cursor: pointer}
     footer .right{float: left!important;}
-    footer .item_tit{transition: height 1s}
+    footer .item_tit{transition: height 1s;}
 }
-@media screen and (min-width: 749px){
-
+@media screen and (max-width: 1314px){
+    footer .left{
+        width: 286px;
+        margin: 0 auto;
+        float: inherit;
+    }
+    footer .right{
+        width: 368px;
+        margin: 0 auto;
+        float: inherit;
+    }
+}
+@media screen and (max-width: 559px){
+    footer .right{
+        text-align: center;
+        width: 210px;
+    }
+    footer .right span{
+        display: block;
+    }
 }

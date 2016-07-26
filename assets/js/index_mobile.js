@@ -2,6 +2,7 @@ $(function(){
     navBarOption.init();
     carousel.init();
     footer.init();
+    alert("这是mobile");
 });
 
 
@@ -92,7 +93,7 @@ var navBarOption={
 };
 
 var carousel= {
-    bianliang: {"src": ["assets/images/lunboImg/img1.jpg", "assets/images/lunboImg/img2.jpg", "assets/images/lunboImg/img3.jpg", "assets/images/lunboImg/img4.jpg", "assets/images/lunboImg/img5.jpg"]},
+    bianliang: {"src": ["assets/images/lunboImg/carousel1.png", "assets/images/lunboImg/carousel2.png", "assets/images/lunboImg/carousel3.png"],"src2":["assets/images/lunboImg/carousel1_1.png","assets/images/lunboImg/carousel2_2.png","assets/images/lunboImg/carousel3_3.png"]},
     carouselOption:function(){
         var div=$("<div id='slider-box'></div>");
         var ul=$("<ul id='slider'></ul>");
