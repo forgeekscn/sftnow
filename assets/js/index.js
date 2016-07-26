@@ -2,7 +2,7 @@ $(function(){
     navBarOption.init();
     carousel.init();
     footer.init();
-    fullpage.init();
+   // fullpage.init();
 });
 
 
@@ -90,19 +90,43 @@ var navBarOption={
 };
 
 var carousel= {
-    bianliang: {"src": ["assets/images/lunboImg/img1.jpg", "assets/images/lunboImg/img2.jpg", "assets/images/lunboImg/img3.jpg", "assets/images/lunboImg/img4.jpg", "assets/images/lunboImg/img5.jpg"]},
+    bianliang: {"src": ["assets/images/lunboImg/carousel1.png", "assets/images/lunboImg/carousel2.png", "assets/images/lunboImg/carousel3.png"],"src2":["assets/images/lunboImg/carousel1_1.png","assets/images/lunboImg/carousel2_2.png","assets/images/lunboImg/carousel3_3.png"]},
     carouselOption:function(){
         var ul=$("<ul class='rslides'></ul>");
         for(var i=0;i<this.bianliang.src.length;i++){
             var li=$("<li></li>");
-            var img=$("<img src='"+this.bianliang.src[i]+"'' alt=''>");
-            li.append(img);
+            var img=$("<img src='"+this.bianliang.src[i]+"' class='img'>");
+            var img2=$($("<img src='"+this.bianliang.src2[i]+"' alt='' style='position: absolute' class='img2'>"));
+            if(i==0){
+                var buttonGroup=$("<div class='btngroup'></div>");
+                var btn1=$("<button class='btn1'>了解更多</button>");
+                var btn2=$("<button class='btn2'>查看业务</button>");
+                buttonGroup.append(btn1).append(btn2);
+                li.append(buttonGroup);
+            }
+            li.append(img).append(img2);
             ul.append(li);
         }
         $(".responsiveImgPlay").append(ul);
+        $(".rslides .img2").eq(0).css({"left":"38%","top":"38%"});
+        $(".rslides .img2").eq(1).css({"left":"26%"});
+        $(".rslides .img2").eq(2).css({"left":"30%"});
+        $(".rslides .btngroup .btn1").addClass("btn_blue");
+        $(".rslides .btngroup button").hover(function(){
+            $(this).addClass("btn_blue").siblings().removeClass("btn_blue");
+        });
+
+    },
+    contentHover:function(){
+        var cover=$("<div class='cover'></div>");
+        var con=$("<div class='con'><img src='assets/images/index/content/i1.png' alt=''><span>盛帆电子股份专业能效监管平台</span></div>");
+        $("article .content li").hover(function(){
+            $(this).append(cover).append(con);
+        });
     },
     init: function () {
         this.carouselOption();
+        this.contentHover();
     }
 };
 
@@ -110,8 +134,10 @@ var carousel= {
 var footer={
     bianliang:{"产品中心":["预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充","预设填充"],"企业简介":["董事长致辞","组织结构","品质保障","公司简介","资质荣誉"],"成功案例":["成功案例"],"服务项目":["服务项目","AO登陆"],"招纳贤士":["社会招聘","校园招聘"]},
     address:["武汉盛帆电子股份有限公司版权所有 鄂ICP备06778号","中国·武汉市江夏区经济开发区阳光大道9号"],
-    tel:"15255646666",
+    tel:"027-81802561",
     footerOption:function(){
+        var erweima=$("<div class='ewm'><img src='assets/images/index/erweima.png' alt=''></div>");
+        $("footer .introduce").append(erweima);
         for(o in this.bianliang){
             var item_tit=$("<div class='item_tit'></div>");
             var item_add=$("<div class='item_add' style='position:absolute;right:0;top:0;display: none'>＋</div>");
@@ -134,7 +160,16 @@ var footer={
         $("footer .bottom .right .tel").html(this.tel);
     },
     addClick:function(){
-        $("footer .item_tit .item").css("display","none");
+        if($(window).width()<789){
+            $("footer .item_tit .item").css("display","none");
+        }
+        $(window).resize(function(){
+            if($(this).width()<789){
+                $("footer .item_tit .item").css("display","none");
+            }else {
+                $("footer .item_tit .item").css("display","block");
+            }
+        });
         $("footer .item_add").each(function(x){
             $(this).click(function(){
                $(this).siblings(".item").slideToggle();
