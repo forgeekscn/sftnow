@@ -13,3 +13,10 @@ js基础
 
 ##
 
+
+#git clone push pemission denied 解决方案
+pc@pc-PC MINGW32 /d/wamp/www/sftnow (master)
+$ git remote rm origin
+
+pc@pc-PC MINGW32 /d/wamp/www/sftnow (master)
+$ git remote add origin git@github.com:xuweikang/sftnow.git
