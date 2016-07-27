@@ -189,6 +189,7 @@ article .header h2,.footer-content .header h2{
 article .header h5,.footer-content .header h5{text-align: center;
     color: #999;
     margin: 0;
+    font-size: 15px;
 }
 article .header hr,.footer-content .header hr{
     width: 9%;
