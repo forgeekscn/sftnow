@@ -36,3 +36,4 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 ##  回到#1
  
  
+ #<script src="https://gist.github.com/HeChao12/1a21a63a1b430a73806fdb57e7ee3230.js"></script>
