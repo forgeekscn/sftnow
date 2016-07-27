@@ -28,5 +28,5 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 ##git push origin master //提交到自己的远程仓库
 ##git lg  //查看提交历史
  
-
+#git pull -X theirs origin master //
  
