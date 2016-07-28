@@ -41,8 +41,7 @@
         <div class="content">
             <div class="head_top_left">中国领先的水、电、气、热，节能监测管理方案提供商</div>
             <div class="head_top_right">中文/英文
-                <!--<a class="XLweib" href="#"><img src="assets/images/index/xinlangWB.png" alt="">新浪微博</a><a class="TXweib" href="#"><img src="assets/images/index/txWB.png" alt="">腾讯微博</a>-->
-                </div>
+                <!--<a class="XLweib" href="#"><img src="assets/images/index/xinlangWB.png" alt="">新浪微博</a><a class="TXweib" href="#"><img src="assets/images/index/txWB.png" alt="">腾讯微博</a>--></div>
         </div>
     </div>
     <div class="nav">
@@ -176,38 +175,7 @@
             </div>
         </div>
     </div>
- 
-
-    <?php
-        $user_agent = $_SERVER['HTTP_USER_AGENT'];
-        if(stristr($user_agent,'iPad') ||stristr($user_agent,'Android')||stristr($user_agent,'iPhone') ||stristr($user_agent,'Linux') ) {
-    ?>
-        <script src ='assets/plugins/zepto.min.js' ></script>
-        <script src='assets/js/index_mobile.js'></script>
-        <script src='assets/js/zeptoCarousel.js'></script>
-       
-
-    <?php
-        $fb_fs= '移动设备';
-        }else{
-         
-    ?>
-        
-        <script src='assets/plugins/jquery-1.9.1.min.js'></script>" 
-        <script src='assets/js/index.js'></script>  
-        <script src='assets/js/responsiveImg.js'></script>" 
-        <script src='assets/js/lunbo.js'></script> 
-        <script src='assets/plugins/jquery.fullPage.min.js' class='fullpage'></script> 
-
-     
-    <?php
-        $fb_fs= 'PC设备';
-        }
-         
-    ?>
- 
 </footer>
- 
 
 
  <?php
@@ -242,7 +210,6 @@
 
 
 
- 
  
 </body>
 </html>

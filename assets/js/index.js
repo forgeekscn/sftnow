@@ -1,5 +1,7 @@
- 
 $(function(){
+
+
+
     navBarOption.init();
     carousel.init();
     footer.init();
@@ -270,4 +272,4 @@ var fullpage={
         });
     }
 };
- 
+
