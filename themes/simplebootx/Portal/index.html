@@ -141,6 +141,7 @@
                         $url1="http://localhost"."__PUBLIC__"."".$url; 
                     ?>
 
+
                 <div class="news_content">
                     <div class="contain">
                         <div class="left">
@@ -158,7 +159,7 @@
                              ?>
                              <volist name="lastnews1" id="vo">
                                 <ul class="newsList">
-                                    <li><span>{$vo.title}</span><span class="time">{$vo.lastupdatetime}</span></li>
+                                    <li><span style="width:10px;text-overflow:ellipsis;"> {$vo.title} </span><span class="time">{$vo.lastupdatetime}</span></li>
                                      
                                 </ul>
                             </volist>

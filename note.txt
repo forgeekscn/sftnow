@@ -50,6 +50,8 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 
 #ui/bk template usage 
 #长字段控制
+#循环标签
+#sql优化
 
 
 

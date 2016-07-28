@@ -131,6 +131,7 @@
             
                     <?php  $url=$lastnews[0]["imageurl"]; $url=preg_replace("/\.axd/", "", $url); $url=preg_replace("/\/{2}/", "/", $url); $url1="http://localhost"."/thinkcmfx/public"."".$url; ?>
 
+
                 <div class="news_content">
                     <div class="contain">
                         <div class="left">
@@ -145,7 +146,7 @@
                             </div>
                             <?php  $lastnews1=$articleModel->where("CategoryId='5'")->order("LastUpdateTime desc")->limit(2)->select(); ?>
                              <?php if(is_array($lastnews1)): $i = 0; $__LIST__ = $lastnews1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><ul class="newsList">
-                                    <li><span><?php echo ($vo["title"]); ?></span><span class="time"><?php echo ($vo["lastupdatetime"]); ?></span></li>
+                                    <li><span style="width:10px;text-overflow:ellipsis;"> <?php echo ($vo["title"]); ?> </span><span class="time"><?php echo ($vo["lastupdatetime"]); ?></span></li>
                                      
                                 </ul><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
