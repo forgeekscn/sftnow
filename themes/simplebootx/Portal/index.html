@@ -67,9 +67,24 @@
             </ul>
              <!--2.2 ##这个是小屏幕下的那个菜单按钮，一点击就出现菜单,同上-->
             <ul class='menu_toggle_dropDown_con'>
-                <li class='navItemToggle'>首页</li>
-                <li class='navItemToggle'>关于我们</li>
-                <li class='navItemToggle'>公司动态</li>
+                <li class='navItemToggle'>首页
+                    <ul style="display:none;">
+                        <li>a</li>
+                        <li>b</li>
+                    </ul>
+                </li>
+                <li class='navItemToggle'>关于我们
+                    <ul style="display:none;">
+                        <li>a</li>
+                        <li>b</li>
+                    </ul>
+                </li>
+                <li class='navItemToggle'>公司动态
+                    <ul style="display:none;">
+                        <li>a</li>
+                        <li>b</li>
+                    </ul>
+                </li>
                 <li class='navItemToggle'>产品中心</li>
                 <li class='navItemToggle'>解决方案</li>
                 <li class='navItemToggle'>工程案例</li>
