@@ -12,10 +12,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-	<link href="/sftnow/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/sftnow/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/sftnow/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/sftnow/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+	<link href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/thinkcmfx/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/thinkcmfx/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
 		.length_3{width: 180px;}
 		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
@@ -23,12 +23,12 @@
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-	<link rel="stylesheet" href="/sftnow/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
 	<![endif]-->
 <script type="text/javascript">
 //全局变量
 var GV = {
-    DIMAUB: "/sftnow/",
+    DIMAUB: "/thinkcmfx/",
     JS_ROOT: "public/js/",
     TOKEN: ""
 };
@@ -36,9 +36,9 @@ var GV = {
 <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/sftnow/public/js/jquery.js"></script>
-    <script src="/sftnow/public/js/wind.js"></script>
-    <script src="/sftnow/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/thinkcmfx/public/js/jquery.js"></script>
+    <script src="/thinkcmfx/public/js/wind.js"></script>
+    <script src="/thinkcmfx/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
 <?php if(APP_DEBUG): ?><style>
 		#think_page_trace_open{
 			z-index:9999;
@@ -53,22 +53,27 @@ li {
 <body>
 	<div class="wrap">
 		<div id="error_tips">
-			<h2><?php echo ($msgTitle); ?></h2>
+			<h2><?php echo L('CACHE_CLEARED');?></h2>
 			<div class="error_cont">
 				<ul>
-					<li><?php echo ($message); ?></li>
+					<li><?php echo L('CACHE_CLEARED');?></li>
 				</ul>
 				<div class="error_return">
-					<a href="<?php echo ($jumpUrl); ?>" class="btn">返回</a>
+					<a href="javascript:close_app();" class="btn"><?php echo L('CLOSE');?></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="/sftnow/public/js/common.js"></script>
+	<script src="/thinkcmfx/public/js/common.js"></script>
 	<script>
-		setTimeout(function() {
-			location.href = '<?php echo ($jumpUrl); ?>';
+		var close_timeout = setTimeout(function() {
+			parent.close_current_app();
 		}, 3000);
+
+		function close_app() {
+			clearTimeout(close_timeout);
+			parent.close_current_app();
+		}
 	</script>
 </body>
 </html>

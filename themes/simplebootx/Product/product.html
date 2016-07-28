@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<tc_include file="Public:head"/>
+	<title></title>	 
 </head>
 <body>
  
-
+<?php 
+	$data['CategoryId']=$categoryId;
+	$productModel=D("Product/PluginProductItem");
+	$list=$productModel->where($data)->order('Id')->select(); 
+ ?>
 	<h1>产品展示</h1>
+	
+	<!-- <foreach name="list" item="vo" key="key">
+		<foreach name="vo" item="v" key="k">
+			<p>{$k}->{$v}</p>	
+		</foreach>
+	</foreach>
+ 	 -->
+	
+	<volist name="list" id="vo">
+		<p> {$vo.title} | {$vo.imageurl} </p>
 
- 
-
-
-
-
-
-
-
-
-
-
+	</volist>
 
  
 

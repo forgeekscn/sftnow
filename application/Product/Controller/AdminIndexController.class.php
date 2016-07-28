@@ -135,7 +135,6 @@ class AdminIndexController extends AdminbaseController{
 
 	function addW(){
 		$this->display(":addW");
-
 	}
 
 

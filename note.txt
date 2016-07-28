@@ -45,3 +45,12 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
  
  
  #<script src="https://gist.github.com/HeChao12/1a21a63a1b430a73806fdb57e7ee3230.js"></script>
+
+
+
+#ui/bk template usage 
+#长字段控制
+
+
+
+
