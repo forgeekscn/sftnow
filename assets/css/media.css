@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 400px) and (max-width: 993px){
     body{position: relative; transition: -webkit-transform 1s ease;
         -webkit-transform: translate3d(0, 0, 0);}
     header .nav_header .menu_toggle_dropDown_con{

@@ -10,7 +10,6 @@
 <meta name="description" content="This is page-header (.page-header &gt; h1)">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<<<<<<< HEAD
 <link href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
 <link href="/thinkcmfx/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
 <link href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
@@ -20,17 +19,6 @@
 <link rel="stylesheet" href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/simplebootadminindex.min.css?">
 <!--[if lte IE 8]>
 	<link rel="stylesheet" href="/thinkcmfx/public/simpleboot/css/simplebootadminindex-ie.css?" />
-=======
-<link href="/sftnow/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-<link href="/sftnow/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-<link href="/sftnow/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
-<!--[if IE 7]>
-	<link rel="stylesheet" href="/sftnow/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
-<![endif]-->
-<link rel="stylesheet" href="/sftnow/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/simplebootadminindex.min.css?">
-<!--[if lte IE 8]>
-	<link rel="stylesheet" href="/sftnow/public/simpleboot/css/simplebootadminindex-ie.css?" />
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 <![endif]-->
 <style>
 .navbar .nav_shortcuts .btn{margin-top: 5px;}
@@ -52,11 +40,7 @@
 var GV = {
 	HOST:"<?php echo ($_SERVER['HTTP_HOST']); ?>",
     DIMAUB: "",
-<<<<<<< HEAD
     JS_ROOT: "/thinkcmfx/public/js/",
-=======
-    JS_ROOT: "/sftnow/public/js/",
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
     TOKEN: ""
 };
 </script>
@@ -158,21 +142,13 @@ right: initial !important;}
 		<div class="navbar-inner">
 			<div class="container-fluid">
 				<a href="<?php echo U('index/index');?>" class="brand"> <small> 
-<<<<<<< HEAD
 				<img src="/thinkcmfx/admin/themes/simplebootx/Public/assets/images/logo-18.png">
-=======
-				<img src="/sftnow/admin/themes/simplebootx/Public/assets/images/logo-18.png">
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 						ThinkCMF <?php echo L('ADMIN_CENTER');?>
 				</small>
 				</a>
 				<div class="pull-left nav_shortcuts" >
 					
-<<<<<<< HEAD
 					<a class="btn btn-small btn-warning" href="/thinkcmfx/" title="<?php echo L('WEBSITE_HOME_PAGE');?>" target="_blank">
-=======
-					<a class="btn btn-small btn-warning" href="/sftnow/" title="<?php echo L('WEBSITE_HOME_PAGE');?>" target="_blank">
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 						<i class="fa fa-home"></i>
 					</a>
 					
@@ -193,11 +169,7 @@ right: initial !important;}
 						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
     						<?php if($admin['avatar']): ?><img class="nav-user-photo" width="30" height="30" src="<?php echo sp_get_user_avatar_url($admin['avatar']);?>" alt="<?php echo ($admin["user_login"]); ?>">
 							<?php else: ?>
-<<<<<<< HEAD
 								<img class="nav-user-photo" width="30" height="30" src="/thinkcmfx/admin/themes/simplebootx/Public/assets/images/logo-18.png" alt="<?php echo ($admin["user_login"]); ?>"><?php endif; ?>
-=======
-								<img class="nav-user-photo" width="30" height="30" src="/sftnow/admin/themes/simplebootx/Public/assets/images/logo-18.png" alt="<?php echo ($admin["user_login"]); ?>"><?php endif; ?>
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 							<span class="user-info">
 								<?php echo L('WELCOME_USER',array('username'=>empty($admin['user_nicename'])?$admin['user_login']:$admin['user_nicename']));?>
 							</span>
@@ -247,13 +219,8 @@ right: initial !important;}
 		</div>
 	</div>
 	
-<<<<<<< HEAD
 	<script src="/thinkcmfx/public/js/jquery.js"></script>
 	<script src="/thinkcmfx/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
-=======
-	<script src="/sftnow/public/js/jquery.js"></script>
-	<script src="/sftnow/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 	<script>
 	var ismenumin = $("#sidebar").hasClass("menu-min");
 	$(".nav-list").on( "click",function(event) {
@@ -289,10 +256,6 @@ right: initial !important;}
 		return false;
 	});
 	</script>
-<<<<<<< HEAD
 	<script src="/thinkcmfx/admin/themes/simplebootx/Public/assets/js/index.js"></script>
-=======
-	<script src="/sftnow/admin/themes/simplebootx/Public/assets/js/index.js"></script>
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 </body>
 </html>

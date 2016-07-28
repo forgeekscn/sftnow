@@ -2,7 +2,6 @@ $(function(){
     navBarOption.init();
     carousel.init();
     footer.init();
-    alert("这是mobile");
 });
 
 
@@ -25,6 +24,7 @@ var navBarOption={
 
             $(".nav_header .menu").append(li);
         }
+    
     },
     menuToggleClick:function(){
         var flag=true;

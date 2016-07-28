@@ -1,0 +1,136 @@
+[ 2016-07-28T08:12:00+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+ERR: 参数错误或者未定义:categoryId
+
+[ 2016-07-28T08:12:15+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T08:12:40+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T08:12:48+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=8
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:43:13+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=8
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:43:35+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=8
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:46:24+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=8
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:46:40+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:47:20+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=4
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:47:24+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:48:37+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:48:50+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:49:10+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:50:42+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:51:06+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:51:13+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:56:01+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:57:40+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:58:16+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T09:59:55+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T10:33:20+08:00 ] ::1 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T10:41:26+08:00 ] ::1 /thinkcmfx/index.php?g=Product&m=AdminIndex&a=productE&menuid=167
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T10:45:57+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=4
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T10:45:58+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T10:46:01+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T10:46:19+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:26:41+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:27:15+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:27:52+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:28:21+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:28:39+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:28:58+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:30:45+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:30:53+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:31:07+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:33:31+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:38:13+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=3
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:38:17+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=4
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:38:22+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:44:10+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:44:24+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:44:25+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:44:25+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:44:33+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
+[ 2016-07-28T11:44:39+08:00 ] ::1 /thinkcmfx/index.php?g=product&m=index&a=getdata&categoryId=7
+NOTIC: D方法实例化没找到模型类Product\Model\PluginProductItemModel
+
