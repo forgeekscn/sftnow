@@ -1,0 +1,9 @@
+[ 2016-07-28T14:08:51+08:00 ] ::1 /sftnow/index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2016-07-28T14:08:54+08:00 ] ::1 /sftnow/index.php?g=&m=AdminPage&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2016-07-28T14:09:00+08:00 ] ::1 /sftnow/index.php?g=&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+

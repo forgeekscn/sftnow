@@ -35,5 +35,15 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 ## ....继续开发中。。。
 ##  回到#1
  
+
+
+
+
+---------页面转化为全静态--------
+##页面中标记  <!-- 8.1 ##公司地址--> 类似标志的，为从数据库中获取内容
+##修改过程中，页面标签,结构,类名要一致，不然css无法渲染
+##
  
  #<script src="https://gist.github.com/HeChao12/1a21a63a1b430a73806fdb57e7ee3230.js"></script>
+
+

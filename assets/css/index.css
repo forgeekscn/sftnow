@@ -201,16 +201,21 @@ article .content ul{margin: 0;padding: 0}
 article .content li{
     list-style: none;
     display: inline-block;
-    padding: 0 2%;
+    padding: 0 6px;
     position: relative;
+}
+article .content li a{
+    color:black;
 }
 article .content img{
     cursor: pointer;
 }
-article .content li span{    position: absolute;
+article .content li span{ position: absolute;
     top: 228px;
     left: 38%;
-    font-family: "微软雅黑";}
+    font-family: "微软雅黑";
+    z-index: 10;
+}
 article .content .cover{
     background-color: #4C4C4C;
     position: absolute;
@@ -232,11 +237,12 @@ article .content .con img{
 }
 article .content .con span{
     position: absolute;
-    top: 142px;
+    top: 108px;
     color: white;
     font-size: 14px;
     left: 50px;
     width: 141px;
+     display: none;
 }
 
 
@@ -254,7 +260,7 @@ article .content .con span{
     font-family: "微软雅黑";
 }
 .footer-content .introduce_idea{
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
 }
 .footer-content .introduce_idea ul{margin: 0;
@@ -267,7 +273,7 @@ article .content .con span{
     text-align: center;
     font-size: 12px;
     font-family: "微软雅黑";
-    padding: 0 5%;
+    padding: 0 8%;
     position: relative;
 }
 .footer-content .introduce_idea li .tit{    color: black;
@@ -276,6 +282,7 @@ article .content .con span{
     margin: 20px 0;}
 .footer-content .news{margin-top: 25px}
 .footer-content .news .news_content{width: 100%}
+.footer-content .news .news_content a{text-decoration: none;color: black}
 .footer-content .news .news_content .title{color: #2c95db;font-size: 16px;font-family: "微软雅黑"}
 .footer-content .news .news_content .left,.footer-content .news .news_content .right{font-size: 12px;width: 406px;font-family: 微软雅黑;display: inline-block;position: relative}
 .footer-content .news .news_content  .summary{height: 95px}

@@ -12,17 +12,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-<<<<<<< HEAD
-	<link href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/thinkcmfx/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/thinkcmfx/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
-=======
 	<link href="/sftnow/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
     <link href="/sftnow/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
     <link href="/sftnow/public/js/artDialog/skins/default.css" rel="stylesheet" />
     <link href="/sftnow/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
     <style>
 		.length_3{width: 180px;}
 		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
@@ -30,20 +23,12 @@
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-<<<<<<< HEAD
-	<link rel="stylesheet" href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
-=======
 	<link rel="stylesheet" href="/sftnow/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 	<![endif]-->
 <script type="text/javascript">
 //全局变量
 var GV = {
-<<<<<<< HEAD
-    DIMAUB: "/thinkcmfx/",
-=======
     DIMAUB: "/sftnow/",
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
     JS_ROOT: "public/js/",
     TOKEN: ""
 };
@@ -51,15 +36,9 @@ var GV = {
 <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-<<<<<<< HEAD
-    <script src="/thinkcmfx/public/js/jquery.js"></script>
-    <script src="/thinkcmfx/public/js/wind.js"></script>
-    <script src="/thinkcmfx/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
-=======
     <script src="/sftnow/public/js/jquery.js"></script>
     <script src="/sftnow/public/js/wind.js"></script>
     <script src="/sftnow/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 <?php if(APP_DEBUG): ?><style>
 		#think_page_trace_open{
 			z-index:9999;
@@ -76,19 +55,11 @@ li {
     list-style: none;
 }
 </style>
-<<<<<<< HEAD
-<script src="/thinkcmfx/public/js/common.js"></script>
-<script src="/thinkcmfx/public/js/jquery.js"></script>
-<script src="/thinkcmfx/public/js/jquery-ui-1.9.2.custom.js"></script>
-<!-- jquery-ui-1.9.2.custom.js -->
-<link rel="stylesheet" href="/thinkcmfx/public/css/ui-lightness/jquery-ui-1.9.2.custom.css">
-=======
 <script src="/sftnow/public/js/common.js"></script>
 <script src="/sftnow/public/js/jquery.js"></script>
 <script src="/sftnow/public/js/jquery-ui-1.9.2.custom.js"></script>
 <!-- jquery-ui-1.9.2.custom.js -->
 <link rel="stylesheet" href="/sftnow/public/css/ui-lightness/jquery-ui-1.9.2.custom.css">
->>>>>>> d912fef26f92bc1bfe19720356baef6fa75be3b5
 </head>
 
 <body>
