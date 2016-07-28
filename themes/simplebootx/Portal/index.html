@@ -175,7 +175,7 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
+ 
 
     <?php
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -204,9 +204,44 @@
         }
         echo $fb_fs; 
     ?>
-=======
+ 
 </footer>
-<script src="assets/js/isPc.js"></script>
->>>>>>> 3fbef426b5df7d60731b7ad3a03b39a34ed696d8
+ 
+
+
+ <?php
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        if(stristr($user_agent,'iPad') ||stristr($user_agent,'Android')||stristr($user_agent,'iPhone')  ) {
+    ?>
+        <script src ='assets/plugins/zepto.min.js' ></script>
+        <script src='assets/js/index_mobile.js'></script>
+        <script src='assets/js/zeptoCarousel.js'></script>
+       
+
+    <?php
+        $fb_fs= '移动设备';
+        }else if(stristr($user_agent,'Linux')){
+            $fb_fs= 'Linux';
+        }else{
+         
+    ?>
+        
+        <script src='assets/plugins/jquery-1.9.1.min.js'></script>" 
+        <script src='assets/js/index.js'></script>  
+        <script src='assets/js/responsiveImg.js'></script>" 
+        <script src='assets/js/lunbo.js'></script> 
+        <script src='assets/plugins/jquery.fullPage.min.js' class='fullpage'></script> 
+
+     
+    <?php
+        $fb_fs= 'PC设备';
+        }
+       
+    ?>
+
+
+
+ 
+ 
 </body>
 </html>
