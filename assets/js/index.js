@@ -25,10 +25,8 @@ var navBarOption={
 
             $(".nav_header .menu").append(li);
         }
-            $(window).scroll(function(){
-            if($("body").scrollTop()>$("header").height()){
-               $("header").css({"position":"absolute","top":$("body").scrollTop()});
-            }
+        $(window).scroll(function(){
+             $("header").css({"position":"fixed","top":0,"left":0,"right":0,"z-index":200,"background":"white"});
         });
     },
     menuToggleClick:function(){
