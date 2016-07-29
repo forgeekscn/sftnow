@@ -30,9 +30,6 @@ class IndexController extends HomebaseController{
 		$this->redirect(U('News/index/getnews',array('newsId'=>'1','url'=>$url) ) );
 	}
   
-  function test(){
-  	$this->show("test function");
-  }
 	public function getsolution(){
 		
 		$this->display(":solution");
@@ -43,6 +40,31 @@ class IndexController extends HomebaseController{
 		$this->display(":product");
 	}
 
+
+
+	  function test(){
+	  	$data=date('Y-m-d H:i:s',strtotime('+1 day'));
+			  	// $this->show($data);
+		$Verify = new \Think\Verify();
+		$Verify->entry(1);
+
+	    
+	     $verify->check($code, $id);
+ 
+	  }
+	function testdata(){
+
+		$data=D("Product/PluginProductItem");
+		// $condition['LastUpdateTime']=array('ELT',date('Y-m-d H:i:s'));
+		// $rs=$data-> where( $condition)->select();
+
+		// $rs=$data->table('cmf_plugin_product_category')->alias('c')->join('cmf_plugin_product_item  p ON c.Id=p.CategoryId')->select();
+		// $rs=$data->field( 'Id , sum(Id) as sum' )->select();
+		$rs=$data->field(true)->select();
+		$result=json_encode($rs);
+	    $this->show($result);
+
+	}
 	 
 
 }

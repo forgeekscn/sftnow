@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>1970-01-01 08:00:00

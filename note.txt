@@ -73,7 +73,7 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 		华文细黑：STXihei 
 		华文楷体：STKaiti 
 		 
--------------------hechao-----7-29--------------
+-------------------hechao-----7-29-am-------------
 #模板传值
 	->$this->redirect(U('News/index/getnews',array('newsId'=>'1') ) );
 ##跳转
@@ -83,8 +83,40 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
  	<a href="{$url}">{$url}</a>
 ##重定向
 	->$this->redirect(U('Product/index/getdata',array('categoryId'=>'3')) ,1);
-	
+
+-------------------hechao-----7-29-pm-------------
+#sql语句
+--join
+--要有效的防止SQL注入问题，我们建议：
+查询条件尽量使用数组方式，这是更为安全的方式；
+如果不得已必须使用字符串查询条件，使用预处理机制；
+使用自动验证和自动完成机制进行针对应用的自定义过滤；
+如果环境允许，尽量使用PDO方式，并使用参数绑定。
+--XSS（跨站脚本攻击）可以用于窃取其他用户的Cookie信息，要避免此类问题，可以采用如下解决方案：
+直接过滤所有的JavaScript脚本；
+转义Html元字符，使用htmlentities、htmlspecialchars等函数；
+系统的扩展函数库提供了XSS安全过滤的remove_xss方法；
+新版对URL访问的一些系统变量已经做了XSS处理
+
+#标签
+
+#json_endcode unicode
+
+#时间格式 
+--$data=date('Y-m-d H:i:s')
+--$data=date('Y-m-d H:i:s',strtotime('+1 day'));
 
 
+#nowcoder
+--http://www.nowcoder.com/ta/review-java java长考知识点
+--http://www.nowcoder.com/ta/review-network 计算机网络
+--http://www.nowcoder.com/ta/nine-chapter?query=&asc=true&order=&page=1 bat面笔试
+--http://www.nowcoder.com/ta/coding-interviews?page=1 剑指offer
+--http://www.nowcoder.com/intelligentTest 专项训练
+--http://www.nowcoder.com/contestRoom 面试真题
+
+--http://www.jikexueyuan.com/course/808.html thinkphp模板
+--http://www.jikexueyuan.com/course/659.html thinkphp控制器
+--http://www.jikexueyuan.com/course/742.html thinkphp视图
 
  
