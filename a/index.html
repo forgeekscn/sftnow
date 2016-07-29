@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>hehehe</title>
+	<meta charset="utf-8" />
+    <title>hehehe</title>
+    <style>
+    nav {
+        margin: 100px auto;
+        text-align: center;
+        font-family: "Comic Sans MS";
+        font-style: normal;
+        font-size: 18px;
+    }
+    
+    nav ul ul {
+        display: none;
+    }
+    
+    nav ul li:hover > ul {
+        display: block;
+    }
+    
+    nav ul {
+        background: #efefef;
+        background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+        background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+        background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+        padding: 0 350px;
+        border-radius: 10px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+    }
+    
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li:hover a {
+        color: #f22;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 25px 40px;
+        color: #757575;
+        text-decoration: none;
+    }
+    
+    nav ul ul {
+        /*background: #5f6975;*/
+        border-radius: 3px;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+    }
+    
+    nav ul ul li {
+        float: none;
+        border-radius: 10px;
+        width: 180px;
+        /*border-top: 1px solid ;
+	        border-bottom: 1px solid #575f6a;
+	        */
+        position: relative;
+    }
+    
+    nav ul ul li a {
+        padding: 15px 40px;
+        color: #000;
+    }
+    
+    nav ul ul li a:hover {
+        background: #bbb;
+        border-radius: 5px;
+    }
+    
+    nav ul ul ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+    </style>
 </head>
+
 <body>
- 
-<script src="https://gist.github.com/HeChao12/1a21a63a1b430a73806fdb57e7ee3230.js"></script>
- 
- 
- 
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新闻</a>
+                <ul>
+                    <li><a href="#">Photoshop</a></li>
+                    <li><a href="#">Illustrator</a></li>
+                    <li><a href="#">Web Design</a>
+                        <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Articles</a>
+                <ul>
+                    <li><a href="#">Web Design</a>
+                        <ul>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">Illustrator</a>
+                                <ul>
+                                    <li><a href="#">Photoshop</a></li>
+                                    <li><a href="#">Illustrator</a></li>
+                                    <li><a href="#">Web Design</a>
+                                        <ul>
+                                            <li><a href="#">HTML</a></li>
+                                            <li><a href="#">CSS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Web Design</a>
+                                <ul>
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">User Experience</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Inspiration</a></li>
+        </ul>
+    </nav>
+
+
+   
 </body>
+
 </html>

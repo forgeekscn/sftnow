@@ -20,12 +20,26 @@ class IndexController extends HomebaseController{
 
 	}
 
+	function getnum(){
+		// $this->show(100);
+		// $this->fetch(":product");
+		// $this->display("");
+		// $this->success("success", U('Product/index/getdata',array('categoryId'=>'3')) ,1) ;
+		// $this->error("error",0); 
+		$url="".U('News/index/getnews',array('newsId'=>'1') );
+		$this->redirect(U('News/index/getnews',array('newsId'=>'1','url'=>$url) ) );
+	}
   
+  function test(){
+  	$this->show("test function");
+  }
 	public function getsolution(){
+		
 		$this->display(":solution");
 	}
 
 	public function getProduct(){
+
 		$this->display(":product");
 	}
 

@@ -60,7 +60,31 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 #长字段控制
 #循环标签
 #sql优化
-#li->checkbox
+#li->checkbox (css)
+	->http://www.jqueryfuns.com/resource/265
+	->js->
+#font-family 
+	->Comic Sans MS
+	->  黑体：SimHei 
+		宋体：SimSun 	 
+		楷体：KaiTi 
+		微软雅黑体：Microsoft YaHei 
+		隶书：LiSu 
+		华文细黑：STXihei 
+		华文楷体：STKaiti 
+		 
+-------------------hechao-----7-29--------------
+#模板传值
+	->$this->redirect(U('News/index/getnews',array('newsId'=>'1') ) );
+##跳转
+	<?php 
+		$url=U("Product/index/test");
+ 	?>
+ 	<a href="{$url}">{$url}</a>
+##重定向
+	->$this->redirect(U('Product/index/getdata',array('categoryId'=>'3')) ,1);
+	
+
 
 
  

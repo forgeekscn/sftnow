@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>1  /thinkcmfx/index.php?g=News&m=index&a=getnews&newsId=1

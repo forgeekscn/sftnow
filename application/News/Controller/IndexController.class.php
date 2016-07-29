@@ -8,6 +8,9 @@ class IndexController extends HomebaseController{
 		$this->display(":trends");
 	}
 	public function getNews(){
+		// $id="".$_GET['newsId'];
+		// $url="".$_GET['url'];
+		// $this->show($id." --  ".$url);
 		$this->display(":news");
 	}
 

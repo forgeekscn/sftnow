@@ -68,16 +68,18 @@
              <!--2.2 ##这个是小屏幕下的那个菜单按钮，一点击就出现菜单,同上-->
             <ul class='menu_toggle_dropDown_con'>
                 <li class='navItemToggle'>首页
-                    <ul style="display:none;">
+                    <ul style="display: inline-block;">
                         <li>a</li>
                         <li>b</li>
                     </ul>
                 </li>
                 <li class='navItemToggle'>关于我们
-                    <ul style="display:none;">
-                        <li>a</li>
-                        <li>b</li>
-                    </ul>
+                   <select>
+                      <option value ="volvo">Volvo</option>
+                      <option value ="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
                 </li>
                 <li class='navItemToggle'>公司动态
                     <ul style="display:none;">
