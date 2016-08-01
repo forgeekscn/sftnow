@@ -1,9 +1,9 @@
-#乱码问题
-#innerHTML用法
-#wamp局域网不能访问 -> http://blog.sina.com.cn/s/blog_48e42dc90101jubj.html
+<br/>乱码问题
+<br/>innerHTML用法
+<br/>wamp局域网不能访问 -> http://blog.sina.com.cn/s/blog_48e42dc90101jubj.html
 					-> http://www.cnblogs.com/sbaicl/archive/2012/10/03/2710657.html
 					-> http://www.poguanzi.net/item/32-wampserver-2-5
-##
+<br/><br/>
 修改端口带来的影响 Y
 融合界面 Y
 git同步 Y
@@ -13,16 +13,16 @@ js基础
 --js调试
 --js递归
 
-##
+<br/><br/>
 
  
-#call back
+<br/>call back
  
 hhhhhhhhhhhhhhhh
  
  
 
-#git clone push pemission denied 解决方案
+<br/>git clone push pemission denied 解决方案
 pc@pc-PC MINGW32 /d/wamp/www/sftnow (master)
 $ git remote rm origin
 
@@ -30,40 +30,40 @@ pc@pc-PC MINGW32 /d/wamp/www/sftnow (master)
 $ git remote add origin git@github.com:xuweikang/sftnow.git
 
 
----------#1------------
-##git add .  // 
-##git commit -am 'tips...' //
-##git push origin master //提交到自己的远程仓库
-##git lg  //查看提交历史
+---------<br/>1------------
+<br/><br/>git add .  // 
+<br/><br/>git commit -am 'tips...' //
+<br/><br/>git push origin master //提交到自己的远程仓库
+<br/><br/>git lg  //查看提交历史
 
--------------#2------------
-## git remote add xwk-dev-origin git@github.com:hechao12/sftnow //建立fork源的联系 方便以后查看改动 同步本地
-## git fetch xwk-dev-origin master    // 抓取远程库改动的地方 等待下一步merge 或者pull
-##git pull  xwk-dev-origin master   /./ g跟新本地仓库 和主开发者保持一致
-## ....继续开发中。。。
-##  回到#1
+-------------<br/>2------------
+<br/><br/> git remote add xwk-dev-origin git@github.com:hechao12/sftnow //建立fork源的联系 方便以后查看改动 同步本地
+<br/><br/> git fetch xwk-dev-origin master    // 抓取远程库改动的地方 等待下一步merge 或者pull
+<br/><br/>git pull  xwk-dev-origin master   /./ g跟新本地仓库 和主开发者保持一致
+<br/><br/> ....继续开发中。。。
+<br/><br/>  回到<br/>1
  
 
 
 
 
 ---------页面转化为全静态--------
-##页面中标记  <!-- 8.1 ##公司地址--> 类似标志的，为从数据库中获取内容
-##修改过程中，页面标签,结构,类名要一致，不然css无法渲染
-##
+<br/><br/>页面中标记  <!-- 8.1 <br/><br/>公司地址--> 类似标志的，为从数据库中获取内容
+<br/><br/>修改过程中，页面标签,结构,类名要一致，不然css无法渲染
+<br/><br/>
  
- #<script src="https://gist.github.com/HeChao12/1a21a63a1b430a73806fdb57e7ee3230.js"></script>
+ <br/><script src="https://gist.github.com/HeChao12/1a21a63a1b430a73806fdb57e7ee3230.js"></script>
 
  
 -----hechao-----7-28--------------
-#ui/bk template usage 
-#长字段控制
-#循环标签
-#sql优化
-#li->checkbox (css)
+<br/>ui/bk template usage 
+<br/>长字段控制
+<br/>循环标签
+<br/>sql优化
+<br/>li->checkbox (css)
 	->http://www.jqueryfuns.com/resource/265
 	->js->
-#font-family 
+<br/>font-family 
 	->Comic Sans MS
 	->  黑体：SimHei 
 		宋体：SimSun 	 
@@ -74,18 +74,18 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 		华文楷体：STKaiti 
 		 
 -------------------hechao-----7-29-am-------------
-#模板传值
+<br/>模板传值
 	->$this->redirect(U('News/index/getnews',array('newsId'=>'1') ) );
-##跳转
+<br/><br/>跳转
 	<?php 
 		$url=U("Product/index/test");
  	?>
  	<a href="{$url}">{$url}</a>
-##重定向
+<br/><br/>重定向
 	->$this->redirect(U('Product/index/getdata',array('categoryId'=>'3')) ,1);
 
 -------------------hechao-----7-29-pm-------------
-#sql语句
+<br/>sql语句
 --join
 --要有效的防止SQL注入问题，我们建议：
 查询条件尽量使用数组方式，这是更为安全的方式；
@@ -98,16 +98,16 @@ $ git remote add origin git@github.com:xuweikang/sftnow.git
 系统的扩展函数库提供了XSS安全过滤的remove_xss方法；
 新版对URL访问的一些系统变量已经做了XSS处理
 
-#标签
+<br/>标签
 
-#json_endcode unicode
+<br/>json_endcode unicode
 
-#时间格式 
+<br/>时间格式 
 --$data=date('Y-m-d H:i:s')
 --$data=date('Y-m-d H:i:s',strtotime('+1 day'));
 
 
-#nowcoder
+<br/>nowcoder
 --http://www.nowcoder.com/ta/review-java java长考知识点
 --http://www.nowcoder.com/ta/review-network 计算机网络
 --http://www.nowcoder.com/ta/nine-chapter?query=&asc=true&order=&page=1 bat面笔试
