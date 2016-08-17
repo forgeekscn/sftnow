@@ -1,9 +1,10 @@
 ###http://www.sftnow.com （武汉盛帆电子股份公司）是基于thinkphp开发的企业门户网站
-* 后台实现实现公司主营产品展示类的CRUD和定制查询，还有基本的页面管理和角色管理。
-![](back1.png "Title")
-* 前台采用jQuery框架，主要展示了公司的企业文化，主营产品，发展形势和招聘发布等信息。
-![](/images/font1.png "Title")
+<br>
+* <br>后台实现实现公司主营产品展示类的CRUD和定制查询，还有基本的页面管理和角色管理。<br>
+![](back1.png "Title")<br>![](back2.png "Title")<br>![](back3.png "Title")<br>
+* <br>前台采用jQuery框架，主要展示了公司的企业文化，主营产品，发展形势和招聘发布等信息。<br>
+![](font1.png "Title")<br>![](font2.png "Title")<br>![](font3.png "Title")<br>
 
 
-#####开发人员：[何超](http://github.com/hechao"With a Title")  && [徐伟康](http://github.com/xuweikang"With a Title")
+#####Powered By：[何超(Back)](http://github.com/hechao"With a Title")  && [徐伟康(Front)](http://github.com/xuweikang"With a Title")
 
