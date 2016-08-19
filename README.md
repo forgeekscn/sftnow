@@ -1,4 +1,4 @@
-###http://www.sftnow.com （武汉盛帆电子股份公司）是基于thinkphp开发的企业门户网站
+###http://www.sftnow.com （武汉盛帆电子股份公司）是一个CMS类型的企业门户网站
 <br>
 <br><br>
 ####后台实现实现公司主营产品展示类的CRUD和定制查询，还有基本的页面管理和角色管理。<br><br>
